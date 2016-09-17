@@ -1,12 +1,19 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: Администратор
- * Date: 17.09.2016
- * Time: 17:44
- */
 class NewsController
 {
+
+    public function actionIndex(){
+        $hi = 'Hello, it is CLASS: NewsController; METHOD: actionIndex';
+        echo '<br>'.$hi.'<br>';
+        return true;
+
+    }
+
+    public function actionView($category, $id){
+        echo '<br>'.$category;
+        echo '<br>'.$id;
+        return true;
+    }
 
 }

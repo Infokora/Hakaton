@@ -1,12 +1,12 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: Администратор
- * Date: 17.09.2016
- * Time: 17:43
- */
 class ArticleController
 {
+    public function actionWork(){
+        $hi = 'Hello, it is CLASS: ArticleController; METHOD: actionWork';
+        echo '<br>'.$hi.'<br>';
 
+        return true;
+
+    }
 }
