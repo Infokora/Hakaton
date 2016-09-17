@@ -25,7 +25,7 @@ $(function(){
 		$('#popup').hide(400);
 	});
 	$('.form_log label').hover(function(){
-		$(this).css('box-shadow',' 0 0 15px #1E90FF');
+		$(this).css('box-shadow',' 5px 5px 10px rgba(0,0,0,0.7)');
 		$(this).css('transition','box-shadow 0.2s');
 
 	}, function(){
