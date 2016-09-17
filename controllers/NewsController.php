@@ -9,9 +9,7 @@ class NewsController
     {
 
         $newsList = News::getNewsList();
-        echo '<pre>';
-        var_export($newsList);
-        echo '</pre>';
+
         require_once(ROOT . 'views/news/index.php');
 
         return true;
