@@ -1,0 +1,35 @@
+ .resize{
+	max-width:1400px;
+	margin:0 auto; 	
+}
+body, p{
+	font: 13px/1.5 Lato, "Century Gothic", "Trebuchet MS", Helvetica, sans-serif;
+	color:white;
+}
+.main{
+	position:fixed;
+	width:100%;
+	background:#000;
+}
+.main .nav{
+	float:right;
+}
+.nav a{
+	font-size:14px;
+	color:white;
+}
+.nav li{
+	float:left;
+
+}
+.nav li a{
+	display:block;
+	padding:15px;
+}
+.nav li:last-child{
+	margin-right:50px;
+}
+.main label{
+	float:left;
+	padding:15px;
+}

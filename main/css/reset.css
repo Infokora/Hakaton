@@ -16,6 +16,7 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
+	font: 13px/1.5 Lato, "Century Gothic", "Trebuchet MS", Helvetica, sans-serif;
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -34,8 +35,8 @@ body {
 	color:black;
 	background:white;
 }
-ol, ul, menu {
-	list-style:;
+ol, ul, menu, li {
+	list-style:none;
 }
 blockquote, q {
 	quotes: none;
