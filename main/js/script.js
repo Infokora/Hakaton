@@ -1,6 +1,7 @@
-var $slider=$('.slider').children();
+$(function(){
+	var $slider=$('.slider').children('div');
 var $next=$("#next");
-var $prev=$('#prev')
+var $prev=$('#prev');
 
 $slider.each(function () {
 	$(this).children().not(':first').hide();
@@ -11,5 +12,14 @@ function goSlide() {
 		.next().addClass('active')
 		.fadeIn();
 };
+function backSlide() {
+	$slider.children('.active').removeClass('active').fadeOut()
+		.prev().addClass('active')
+		.fadeIn();
+};
 
-$next.onclick(goSlide());
+$next.on('click',goSlide);
+$prev.on('click',backSlide);
+
+
+})
