@@ -1,0 +1,70 @@
+html { margin:0; padding:0;}
+body { margin:0; padding:0; color:black; font:normal 22px/48px 'Open Sans', sans-serif; background:#fff;}
+.clr:after { content:""; display:block; height:0; font-size:0; line-height:0; clear:both;}
+p { margin:0; padding:0; font-size: 20px; line-height: 30px;}
+a { color:#ff0000; text-decoration:underline;}
+a:hover { color:#00ff00;}
+a img { border:none;}
+h1, h2, h3, h4, h5, h6 { margin:0; padding:0; font-weight:300; color:#000;}
+h1 { padding:120px 0 24px; font-size: 61px; position: relative;}
+h2 { padding: 0 0 5px; font-weight: 600; font-size: 29px;}
+
+.blue_line {
+    background: rgb(30, 144, 255);
+}
+
+.mainwrapper {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+.registration_form_title {
+    font-size: 55px;
+    display: block;
+    margin: 0 0 30px;
+    padding-top: 40px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+}
+
+.registration_form {
+    margin: 0 auto;
+    padding: 10px 25px 20px;
+    width: 800px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+
+.registration_form label {
+    margin: 30px 0;
+    display: block;
+
+}
+
+.registration_form input {
+    margin-top: -2px;
+    float: right;
+    border: none;
+    width: 376px;
+    height: 42px;
+    font-size: 23px;
+    box-sizing: border-box;
+    padding: 6px 6px 6px 18px;
+}
+
+.registration_form input[type="submit"] {
+    margin: 20px 237px 10px;
+    background: transparent;
+    padding: 10px;
+    height: auto;
+    font-size: 28px;
+    width: 326px;
+    line-height: 28px;
+    box-sizing: border-box;
+    border: solid 2px white;
+    color: white;
+}
