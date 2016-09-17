@@ -24,14 +24,14 @@ class News
 
         $newsList = array();
 
-        $result = $db->query("SELECT `id`, `title`, `date`, `short_content` FROM `news` ORDER BY `date` DESC LIMIT 10");
+        $result = $db->query("SELECT `id`, `title`, `short_content`, `author_name` FROM `news` ORDER BY `date` DESC LIMIT 10");
 
         $i = 0;
         while ($row = $result->fetch_assoc()) {
             $newsList[$i]['id'] = $row['id'];
             $newsList[$i]['title'] = $row['title'];
-            $newsList[$i]['date'] = $row['date'];
             $newsList[$i]['short_content'] = $row['short_content'];
+            $newsList[$i]['author_name'] = $row['author_name'];
             $i++;
         }
         $db->close();
