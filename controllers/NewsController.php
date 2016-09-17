@@ -1,19 +1,30 @@
 <?php
 
+include_once (ROOT.'models/News.php');
+
 class NewsController
 {
 
     public function actionIndex(){
-        $hi = 'Hello, it is CLASS: NewsController; METHOD: actionIndex';
-        echo '<br>'.$hi.'<br>';
+
+        $newsList = News::getNewsList();
+
+        require_once (ROOT.'views/news/index.php');
+
         return true;
 
     }
 
-    public function actionView($category, $id){
-        echo '<br>'.$category;
-        echo '<br>'.$id;
+    public function actionView($id){
+        if($id){
+            $newsItem = News::getNewsItemById($id);
+            echo '<pre>';
+            print_r($newsItem);
+            echo '</pre>';
+            return true;
+        }
         return true;
+
     }
 
 }

@@ -1,0 +1,35 @@
+.slider .go{position: relative;
+    margin:0 auto;}
+.go {
+    position: relative;
+    width: 900px;
+    height: 600px ;
+    border: 1px solid black;
+}
+.active{
+    left:0;
+}
+.slider section { float: left;
+    margin: 25px;
+    color: red;
+    width: 390px;
+    height: 250px;
+    background-color: grey;
+    border: 1px solid black;
+}
+
+.next{position: absolute; right: -6.5%;top: 47%; border: none;
+    border-radius: 50%;outline: none;opacity: .7;
+    width:55px;height:55px;
+}
+.next  img{position: absolute; top:16%; left: 22.5%;
+    height:37px; width: 37px;
+
+}
+.next:hover{cursor: pointer}
+.prev{position: absolute; margin-left: -60px;top: 47%; border: none;
+    border-radius: 50%;outline: none;opacity: .7;
+    width:55px;height:55px;}
+.prev img{position: absolute; top:16%; left: 7.5%;
+    height:37px; width: 37px;}
+.prev:hover{cursor: pointer}

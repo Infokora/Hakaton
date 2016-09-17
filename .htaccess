@@ -2,8 +2,11 @@ AddDefaultCharset utf-8
 
 RewriteEngine on
 RewriteBase /Hakaton
-RewriteRule ^(.*)$ index.php
 
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php
 #
 #RewriteCond %{REQUEST_FILENAME} !-f
 #RewriteRule ^img-(.*)-extension-([a-zA-Z]{3,4})$ upload/$1.$2 [QSA,L]
