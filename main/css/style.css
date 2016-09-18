@@ -113,6 +113,75 @@ h2 { padding: 0 0 5px; font-weight: 600; font-size: 29px;}
 }
 
 .mainpage_background {
-    background: url('../images/powee') left top;
+    background: url('../../images/main_img.jpg') center center no-repeat rgb(30, 144, 255) ;
+    background-size: cover;
 
+}
+
+.title {
+    text-transform: uppercase;
+    color: white;
+    font-size: 80px;
+    line-height: 85px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.company_description {
+    color: white;
+    width: 1000px;
+    padding: 630px 0 45px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+    line-height: 45px;
+}
+
+.company_info h1 {
+    color: white;
+    text-align: center;
+    padding: 220px 0 25px;
+    font-size: 70px;
+    line-height: 75px;
+}
+
+.company_info p {
+    color: white;
+    text-align: center;
+    padding:0 0 25px;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.info_container{
+    padding-bottom: 60px;
+}
+
+.info_sections {
+    margin: 2px;
+    width: 250px;
+    box-sizing: border-box;
+    float: left;
+
+}
+
+.info_sections img {
+    border-radius:50%;
+    width: 210px;
+    padding: 20px;
+}
+
+.info_sections p {
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+.info_sections p:nth-child(3) {
+    color:white;
+    text-transform: none;
+    text-align: center;
+    padding: 0 30px;
+    font-size: 15px;
+    line-height: 25px;
 }

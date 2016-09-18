@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac4c71c5-b2f2-42d2-bff4-b9c33d62eb35" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/Power.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/mainpage_img.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/css/style.css" afterPath="$PROJECT_DIR$/main/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/js/script.js" afterPath="$PROJECT_DIR$/main/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registration_form.html" afterPath="$PROJECT_DIR$/registration_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main_page.html" afterPath="$PROJECT_DIR$/main_page.html" />
     </list>
     <ignored path="Hakaton.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,10 +25,10 @@
     <favorites_list name="Hakaton" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.653125">
+    <splitter split-orientation="horizontal" split-proportion="0.5578125">
       <split-first>
         <leaf>
-          <file leaf-file-name="registration_form.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="registration_form.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/registration_form.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="587">
@@ -48,11 +48,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="main_page.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="main_page.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main_page.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" column="31" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="31" />
+                <state relative-caret-position="223">
+                  <caret line="24" column="34" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="34" />
                   <folding />
                 </state>
               </provider>
@@ -75,8 +75,8 @@
           <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="765">
-                  <caret line="115" column="23" selection-start-line="115" selection-start-column="23" selection-end-line="115" selection-end-column="23" />
+                <state relative-caret-position="733">
+                  <caret line="156" column="21" selection-start-line="156" selection-start-column="21" selection-end-line="156" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -104,10 +104,10 @@
         <option value="$PROJECT_DIR$/my.html" />
         <option value="$PROJECT_DIR$/main/css/registration_form_verification.js" />
         <option value="$PROJECT_DIR$/main/js/main_page.html" />
-        <option value="$PROJECT_DIR$/main_page.html" />
-        <option value="$PROJECT_DIR$/main/css/style.css" />
         <option value="$PROJECT_DIR$/registration_form.html" />
         <option value="$PROJECT_DIR$/main/js/script.js" />
+        <option value="$PROJECT_DIR$/main_page.html" />
+        <option value="$PROJECT_DIR$/main/css/style.css" />
       </list>
     </option>
   </component>
@@ -116,6 +116,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
@@ -257,6 +260,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ac4c71c5-b2f2-42d2-bff4-b9c33d62eb35" name="Default" comment="" />
@@ -264,12 +270,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1474110312813</updated>
-      <workItem from="1474110314008" duration="42862000" />
+      <workItem from="1474110314008" duration="51271000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42862000" />
+    <option name="totallyTimeSpent" value="51271000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -390,26 +396,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="115" column="23" selection-start-line="115" selection-start-column="23" selection-end-line="115" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/verstka/2016-07-19/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
           <caret line="148" column="148" selection-start-line="148" selection-start-column="148" selection-end-line="148" selection-end-column="148" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -426,6 +416,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="587">
           <caret line="43" column="90" selection-start-line="43" selection-start-column="90" selection-end-line="43" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="733">
+          <caret line="156" column="21" selection-start-line="156" selection-start-column="21" selection-end-line="156" selection-end-column="21" />
           <folding />
         </state>
       </provider>
