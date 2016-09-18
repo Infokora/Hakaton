@@ -44,20 +44,28 @@ $(function(){
 		$(this).css('transition','box-shadow 0.2s');
 	});
 
-	/*var kilcPar=$('.spusok li');
-	var polovuna=kilcPar.length/2;
-	console.log(polovuna);
+	var kilcPar=$('.one_team li');
 	function randNum(min, max) {
-	   return Math.floor(Math.random() * (kilcPar.length - polovuna + 1)) + polovuna;
+	   return Math.floor(Math.random() * (kilcPar.length - 2 + 1)) + 2;
 	};
-var a;
-	var masSpuska = [];                                      
-	for(i=0; i<kilcPar.length; i++) {
-		a=randNum();
-		kilcPar[].append('')
+
+	var masTwo;
+	masTwo= $('.two_team li');
+ var masRand=[];
+
+	$('jereb_run').click(function(){
+			for(i=0; i<masTwo.length; i++){
+		var a=randNum();
+		masRand[i]=masTwo[a];
+		masTwo[a].remove();
 	};
-	console.log(masSpuska);
-	*/
+		var a;
+		var masSpuska = [];                                      
+		for(i=0; i<masTwo.length; i++) {
+			kilcPar[i].append('<li>'+masTwo[i].html()+'</li>');
+		};
+	});
+	
 
 
 

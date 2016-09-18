@@ -58,7 +58,6 @@ body, p{
 	height:220px;
 	border-radius:10px;
 	background:#1E90FF;
-	visibility: 0.1px;
 }
 .form_log form{
 	margin-top:10px;
@@ -122,7 +121,7 @@ body, p{
 	content:"";
 	width:24px;
 	height:24px;
-	background:url(..//img/75phone.png);
+	background:url(../img/75phone.png);
 }
 #popup .soc_icon{
 	padding:30px;
@@ -143,20 +142,20 @@ body, p{
 	background:white;
 }
 #popup .soc_icon ul li:nth-child(1) a{
-	background:url(..//img/facebook.png);
+	background:url(../img/facebook.png);
 }
 #popup .soc_icon ul li:nth-child(2) a{
-	background:url(..//img/g+.png);
+	background:url(../img/g+.png);
 }
 #popup .soc_icon ul li:nth-child(3) a{
-	background:url(..//img/twitter.png);
+	background:url(../img/twitter.png);
 }
 .resize .create_news{
 	position:relative;
 	top:100px;
 	left:25%;
 	width:50%;
-	margin:0 auto
+	margin:0 auto;
 	border-radius:10px;
 	background:white;
 }
