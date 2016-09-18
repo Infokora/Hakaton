@@ -6,6 +6,7 @@ class LoginController
 {
     public function actionIndex(){
 
+
 //        $user = News::getNewsList();
 
         require_once(ROOT . 'views/login/index.php');

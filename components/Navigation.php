@@ -7,10 +7,12 @@ class Navigation
         if ($data['class'] !== '') {
             $active = ' class="' . (($current == $data['link']) ? 'active' : '') . ' '.$data['class'].'"';
             $link = ($current == $data['link']) ? '#' : PATH . $data['link'];
+//            $link = ($current == $data['link']) ? '#' : '#';
             return '<li' . $active . '><a href="' . $link . '">' . $data['title'] . '</a></li>';
         } elseif ($data['class'] == '') {
             $active = ' class="' . (($current == $data['link']) ? 'active' : '') . '"';
             $link = ($current == $data['link']) ? '#' : PATH . $data['link'];
+//            $link = ($current == $data['link']) ? '#' : '#';
             return '<li' . $active . '><a href="' . $link . '">' . $data['title'] . '</a></li>';
         }
     }
