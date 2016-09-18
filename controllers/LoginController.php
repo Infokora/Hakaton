@@ -1,10 +1,15 @@
 <?php
 
-class ProductController
+include_once(ROOT . 'models/Login.php');
+
+class LoginController
 {
-    public function actionList(){
-        $hi = 'Hello, it is CLASS: ProductController; METHOD: actionList';
-        echo '<br>'.$hi.'<br>';
+    public function actionIndex(){
+
+//        $user = News::getNewsList();
+
+        require_once(ROOT . 'views/login/index.php');
+
         return true;
 
     }

@@ -1,6 +1,22 @@
 <?php
 
-class Product
+class Login
 {
+    public static function getUserFromBase($user)
+    {
+        $db = Db::getConnection();
+        $db->query("SET NAMES 'utf8'");
 
+        $result = $db->query("SELECT * FROM `users` WHERE `login` = $user");
+        $user = $result->fetch_assoc();
+
+        $db->close();
+        return $user;
+    }
+
+    public static function get($user)
+    {
+        return $user;
+
+    }
 }

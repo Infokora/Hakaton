@@ -4,15 +4,14 @@ class Navigation
 {
     public function getLink($data, $current = '')
     {
-        if ($data['link'] == 'Связь с нами') {
-            $active = ' class="' . (($current == $data['link']) ? 'active' : '') . ' connect"';
-            return '<li' . $active . '><a href="'. PATH . $data['link'] . '">' . $data['title'] . '</a></li>';
-        } elseif ($data['link'] == 'Вход') {
-            $active = ' class="' . (($current == $data['link']) ? 'active' : '') . ' log_animate"';
-            return '<li' . $active . '><a href="' . PATH . $data['link'] . '">' . $data['title'] . '</a></li>';
-        } else {
+        if ($data['class'] !== '') {
+            $active = ' class="' . (($current == $data['link']) ? 'active' : '') . ' '.$data['class'].'"';
+            $link = ($current == $data['link']) ? '#' : PATH . $data['link'];
+            return '<li' . $active . '><a href="' . $link . '">' . $data['title'] . '</a></li>';
+        } elseif ($data['class'] == '') {
             $active = ' class="' . (($current == $data['link']) ? 'active' : '') . '"';
-            return '<li' . $active . '><a href="' . PATH . $data['link'] . '">' . $data['title'] . '</a></li>';
+            $link = ($current == $data['link']) ? '#' : PATH . $data['link'];
+            return '<li' . $active . '><a href="' . $link . '">' . $data['title'] . '</a></li>';
         }
     }
 
@@ -31,6 +30,7 @@ class Navigation
             $nav_from_db[$i]['description'] = $row['description'];
             $nav_from_db[$i]['active'] = $row['active'];
             $nav_from_db[$i]['grant'] = $row['grant'];
+            $nav_from_db[$i]['class'] = $row['class'];
             $i++;
         }
         $db->close();
@@ -41,7 +41,7 @@ class Navigation
     {
         $navigation = $this->getNavigation();
 
-        $navContent = '<nav class="navbar navbar-default"><div class="container-fluid"><menu class="nav navbar-nav">';
+        $navContent = '<nav class="nav">';
         foreach ($navigation as $nav) {
             if (($nav['grant'] == ACCESS)) {
                 if (isset($_SESSION['user_access']) && $_SESSION['user_access'] == ACCESS) {
@@ -57,7 +57,7 @@ class Navigation
                 $navContent .= $this->getLink($nav, $page);
             }
         }
-        $navContent .= '</menu></div></nav>';
+        $navContent .= '</nav>';
         return $navContent;
     }
 }
