@@ -13,6 +13,7 @@ class News
 
             $result = $db->query("SELECT * FROM `news` WHERE `id` = $id");
             $newsItem = $result->fetch_assoc();
+
             $db->close();
         }
         return $newsItem;
