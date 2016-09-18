@@ -50,6 +50,51 @@ $(function(){
          $cont.animate({marginTop:"50px"},700)
       }
    })
+
+   $('[name="from_10_to_6_submit"]').click(function () {
+      var participantsInfo={},
+          participantsPoints=[],
+          participantsWinnersNames=[],
+          $participants=$('ul.participants'),
+          $points=$('ul.participants_points'),
+          $winnersList=$('div.the_final_6');
+
+      for (var i=0; i<$participants.children().length; i++) {
+         participantsInfo[$participants.children().eq(i).children().eq(0).html()]=$points.children().eq(i).children()[0].value;
+      }
+
+      for (var key in participantsInfo) {
+         participantsPoints.push(+participantsInfo[key])
+      }
+
+      participantsPoints.sort(function(a,b){return a-b;}).reverse()
+      console.log(participantsPoints)
+
+      addingWinnersProcess:
+      for (var i=0; i<6; i++) {
+         for (var key in participantsInfo) {
+            if (participantsPoints[i]==participantsInfo[key]) {
+               participantsWinnersNames.push(key);
+               delete participantsInfo[key];
+               if (participantsWinnersNames.length==6) {
+                  break addingWinnersProcess;
+               }
+            }
+         }
+      }
+
+      console.log(participantsWinnersNames)
+
+      for (var i=0; i<$winnersList.children(0).eq(0).children().length-1; i++) {
+         $winnersList.children().eq(0).children().eq(i).html(participantsWinnersNames[i]+' '+participantsPoints[i])
+      }
+
+      $winnersList.css("display", "block")
+
+      $('#the_final_6_close').click(function () {
+         $winnersList.css("display", "none")
+      })
+   })
 });
 
 //$('html body').scrollTop()

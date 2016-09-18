@@ -2,15 +2,19 @@ html { margin:0; padding:0;}
 body { margin:0; padding:0; color:black; font:normal 22px/48px 'Open Sans', sans-serif; background:#fff;}
 .clr:after { content:""; display:block; height:0; font-size:0; line-height:0; clear:both;}
 p { margin:0; padding:0; font-size: 20px; line-height: 30px;}
-a { color:#ff0000; text-decoration:underline;}
-a:hover { color:#00ff00;}
+a { color:black; text-decoration:none;}
+a:hover { color: black;}
 a img { border:none;}
 h1, h2, h3, h4, h5, h6 { margin:0; padding:0; font-weight:300; color:#000;}
 h1 { padding:120px 0 24px; font-size: 61px; position: relative;}
 h2 { padding: 0 0 5px; font-weight: 600; font-size: 29px;}
-
+li {list-style: none;}
 .blue_line {
     background: rgb(30, 144, 255);
+}
+
+.page_center {
+    margin: 0 auto;
 }
 
 .mainwrapper {
@@ -186,4 +190,121 @@ h2 { padding: 0 0 5px; font-weight: 600; font-size: 29px;}
     font-size: 15px;
     line-height: 25px;
 }
+
+.from_10_to_6{
+    padding: 20px 0 50px;
+}
+
+.from_10_to_6 .participants {
+    float: left;
+    padding: 0 0 0 250px;
+    color: white;
+    list-style: decimal;
+    font: normal 30px/45px 'Open Sans', sans-serif;
+}
+
+.from_10_to_6 .participants li{
+    list-style: decimal;
+}
+
+.from_10_to_6 .participants_points {
+    float: right;
+    padding: 0 250px 0 0;
+}
+
+.from_10_to_6 .participants_points li {
+    height: 25px;
+    padding: 9px 0;
+}
+
+.from_10_to_6 .participants_points input[type="text"]{
+    color: white;
+    width: 70px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    border-bottom: solid 2px white;
+    text-align: center;
+    font-size: 25px;
+    outline: none;
+}
+
+.from_10_to_6 .participants_points input[type="text"]:focus {
+    border-bottom: solid 5px white;
+}
+
+.from_10_to_6 .participants_points input[type="submit"] {
+    margin: 35px 0 0 -38px;
+    background: transparent;
+    padding: 5px;
+    height: auto;
+    font-size: 20px;
+    width: 150px;
+    line-height: 30px;
+    box-sizing: border-box;
+    border: solid 4px white;
+    color: white;
+    font-weight: 500;
+    transition: all 150ms;
+    -webkit-transition:  all 150ms;
+    -moz-transition:  all 150ms;
+    -o-transition:  all 150ms;
+}
+
+.from_10_to_6 .participants_points input[type="submit"]:hover {
+    transition: all 150ms;
+    -webkit-transition: all 150ms;
+    -moz-transition: all 150ms;
+    -o-transition: all 150ms;
+    background: white;
+    color: rgb(30, 144, 255);
+    border: solid 4px rgb(30, 144, 255);
+    box-shadow: 5px 10px 15px 2px rgba(31, 31, 31, 0.5), -5px 10px 15px 2px rgba(31, 31, 31, 0.5);
+    -moz-box-shadow: 5px 10px 15px 2px rgba(31, 31, 31, 0.5), -5px 10px 15px 2px rgba(31, 31, 31, 0.5);
+    -webkit-box-shadow: 5px 10px 15px 2px rgba(31, 31, 31, 0.5), -5px 10px 15px 2px rgba(31, 31, 31, 0.5)
+}
+
+.from_10_to_6 .participants_points input[type="submit"]:active {
+    transition: all 50ms;
+    -webkit-transition:  all 50ms;
+    -moz-transition:  all 50ms;
+    -o-transition:  all 50ms;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    text-shadow: 3px 6px 4px rgba(31, 31,31, 0.4);
+}
+
+.the_final_6 {
+    display: none;
+    z-index: 100;
+    width: 500px;
+    min-height: 600px;
+    background: white;
+    border: solid 5px rgb(30, 144, 255);
+    color: rgb(30, 144, 255);
+    position: fixed;
+    top: 50px;
+    margin-left: 50%;
+    left: -300px;
+}
+
+.the_final_6 li {
+    list-style: decimal;
+}
+
+.the_final_6 li:last-child {
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 

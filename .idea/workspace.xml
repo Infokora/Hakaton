@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac4c71c5-b2f2-42d2-bff4-b9c33d62eb35" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/10to6.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/css/style.css" afterPath="$PROJECT_DIR$/main/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main/js/script.js" afterPath="$PROJECT_DIR$/main/js/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main_page.html" afterPath="$PROJECT_DIR$/main_page.html" />
     </list>
     <ignored path="Hakaton.iws" />
@@ -25,70 +24,50 @@
     <favorites_list name="Hakaton" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.66614586">
+    <splitter split-orientation="horizontal" split-proportion="0.42395833">
       <split-first>
-        <splitter split-orientation="horizontal" split-proportion="0.3630673">
-          <split-first>
-            <leaf>
-              <file leaf-file-name="registration_form.html" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/registration_form.html">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="719">
-                      <caret line="49" column="41" selection-start-line="48" selection-start-column="0" selection-end-line="49" selection-end-column="41" />
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/main/js/script.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="1200">
-                      <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-                      <folding>
-                        <marker date="1474204078764" expanded="true" signature="14:1837" ph="{...}" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="main_page.html" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/main_page.html">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="216">
-                      <caret line="26" column="34" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="34" />
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-                <entry file="file://E:/verstka/2016-07-19/html/index.html">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="248">
-                      <caret line="148" column="148" selection-start-line="148" selection-start-column="148" selection-end-line="148" selection-end-column="148" />
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-first>
-          <split-second>
-            <leaf>
-              <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/main/js/script.js">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="491">
-                      <caret line="46" column="65" selection-start-line="46" selection-start-column="65" selection-end-line="46" selection-end-column="65" />
-                      <folding />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-second>
-        </splitter>
+        <leaf>
+          <file leaf-file-name="registration_form.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/registration_form.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="719">
+                  <caret line="49" column="41" selection-start-line="48" selection-start-column="0" selection-end-line="49" selection-end-column="41" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="10to6.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/10to6.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="486">
+                  <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main_page.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/main_page.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="174">
+                  <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+            <entry file="file://E:/verstka/2016-07-19/html/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="248">
+                  <caret line="148" column="148" selection-start-line="148" selection-start-column="148" selection-end-line="148" selection-end-column="148" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
       </split-first>
       <split-second>
         <leaf>
@@ -126,8 +105,9 @@
         <option value="$PROJECT_DIR$/main/js/main_page.html" />
         <option value="$PROJECT_DIR$/main/css/style.css" />
         <option value="$PROJECT_DIR$/registration_form.html" />
-        <option value="$PROJECT_DIR$/main_page.html" />
         <option value="$PROJECT_DIR$/main/js/script.js" />
+        <option value="$PROJECT_DIR$/main_page.html" />
+        <option value="$PROJECT_DIR$/10to6.html" />
       </list>
     </option>
   </component>
@@ -231,7 +211,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/main/js/script.js" />
+    <property name="last_opened_file_path" value="E:/verstka/pumpkin/html/js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
@@ -290,12 +270,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1474110312813</updated>
-      <workItem from="1474110314008" duration="56787000" />
+      <workItem from="1474110314008" duration="58554000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56787000" />
+    <option name="totallyTimeSpent" value="58554000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -424,10 +404,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://E:/verstka/2016-07-19/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
           <caret line="148" column="148" selection-start-line="148" selection-start-column="148" selection-end-line="148" selection-end-column="148" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="920">
+          <caret line="46" column="65" selection-start-line="46" selection-start-column="65" selection-end-line="46" selection-end-column="65" />
           <folding />
         </state>
       </provider>
@@ -440,18 +436,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_page.html">
+    <entry file="file://$PROJECT_DIR$/10to6.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="26" column="34" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="46" column="65" selection-start-line="46" selection-start-column="65" selection-end-line="46" selection-end-column="65" />
+        <state relative-caret-position="486">
+          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
           <folding />
         </state>
       </provider>
