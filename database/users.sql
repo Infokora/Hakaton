@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Сен 18 2016 г., 21:09
+-- Время создания: Сен 18 2016 г., 21:26
 -- Версия сервера: 10.1.9-MariaDB
 -- Версия PHP: 5.6.15
 
@@ -32,16 +32,19 @@ CREATE TABLE `users` (
   `password` varchar(64) DEFAULT NULL,
   `grant` tinyint(1) DEFAULT '1',
   `active` tinyint(1) DEFAULT '1',
-  `FIO` varchar(256) DEFAULT NULL
+  `FIO` varchar(256) DEFAULT NULL,
+  `email` varchar(255) NOT NULL,
+  `country` varchar(255) NOT NULL,
+  `phone` bigint(255) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `users`
 --
 
-INSERT INTO `users` (`id`, `login`, `password`, `grant`, `active`, `FIO`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 1, 1, 'Roma Slobodeniuk'),
-(2, 'User1', '', 1, 1, 'User1_fio');
+INSERT INTO `users` (`id`, `login`, `password`, `grant`, `active`, `FIO`, `email`, `country`, `phone`) VALUES
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 1, 1, 'Roma Slobodeniuk', 'romsl@i.ua', 'Ukraine', 380673800836),
+(2, 'User1', '', 1, 1, 'User1_fio', '', '', 0);
 
 --
 -- Индексы сохранённых таблиц
