@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 
 define('ROOT', __DIR__.'/');
 //echo ROOT;
-
+session_start();
 require_once (ROOT.'/components/Db.php');
 require_once (ROOT.'/components/Router.php');
 //echo '<br>';
