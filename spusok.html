@@ -4,49 +4,64 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<script src="main/js/jquery.min.js"></script>
-	<script src="main/js/script.js"></script>
 	<link rel="stylesheet" href="main/css/style.css">
 	<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div id="wrap">
-	<main class="main">
+	<nav class="main">
 		<label for="">
 			<img src="" alt="">
 			<p>Логотип</p>
 		</label>
-		<nav class="nav">
+		<menu class="nav">
 			<li><a href="#">Главная</a></li>
 			<li><a href="#">Новости</a></li>
 			<li><a href="#">События</a></li>
 			<li><a href="#">О нас</a></li>
 			<li class="connect"><a href="#">Связь с нами</a></li>
 			<li class="log_animate"><a href="#">Вход</a></li>
-			<li class="evant_animate"><a href="#">Создать Событие</a></li>
-			<li class="news_animate"><a href="create_news.html">Создать Новость</a></li>
+		</menu>
+	</nav>
+	<main class="resize">
+		<section>
+			<ul class="spusok">
+				<li>Пара 1</li><li>Пара 6</li>
+				<li>Пара 2</li><li>Пара 7</li>
+				<li>Пара 3</li><li>Пара 8</li>
+				<li>Пара 4</li><li>Пара 9</li>
+				<li>Пара 5</li><li>Пара 10</li>
+			</ul>
+			<a href="">жеребкування</a>
+		</section>
 
-		</nav>
-	</main>
-	<div class="resize">
 
 
-	
-		<!-- News -->
 
-		<!-- Evant -->
 
-		<!-- log in -->
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- popup log in -->
 			<div id="overlay_log"></div>
 				<div class="form_log">
 					<form>
-						<label for="login_in"><input name="log_in" id="login_in" type="login" placeholder="Введите логин"></label>
-						<label for="password_in"><input name="pass_in" id="password_in" type="password" placeholder="Введите пароль"></label>
+						<label for="login_in"><input id="login_in" type="login" placeholder="Введите логин"></label>
+						<label for="password_in"><input id="password_in" type="password" placeholder="Введите пароль"></label>
 						<label for=""><a href="#">Войти</a></label>
 						<a href="#" class="reg">Зарегистрироватся</a>
 					</fomr>
 				</div>
-
-					<!-- popup -->
+					<!-- popup kontaktu-->
 				<div id="overlay"></div>
 					<div id="popup">
 					<div class="header"><h2>Наши контакты</h2></div>
@@ -64,8 +79,9 @@
 						</div>
 					</div>
 				</div>
-	</div>
+	</main>
 </div>
+<script src="main/js/script.js"></script>
 <link rel="stylesheet" href="main/css/reset.css">
 </body>
 </html>
