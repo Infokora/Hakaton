@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <title></title>
     <meta charset="utf-8">
-    <script src="main/js/jquery.min.js"></script>
-    <script src="main/js/script.js"></script>
     <link rel="stylesheet" type="text/css" href="main/css/style.css">
     <style>
         @font-face {
@@ -18,15 +15,37 @@
 <div class="blue_line">
     <div class="mainwrapper">
         <h2 class="registration_form_title">Регистрация на сайте</h2>
-        <form class="registration_form clr">
-            <label>Как Вас зовут?<input type="text" placeholder="Имя Фамилия" name="user_name"></label>
-            <label>Придумайте пароль<input type="password" placeholder="Ваш пароль" name="password_1"></label>
-            <label>Повторите пароль<input type="password" placeholder="Ваш пароль" name="password_2"></label>
-            <label>Ваш email<input type="email" placeholder="example@mail.com" name="user_email"></label>
-            <label>Откуда Вы?<input type="text" placeholder="Страна" name="user_country"></label>
-            <label>Ваш номер телефона<input type="tel" placeholder="380971234567" name="user_phone"></label>
-            <label><input type="submit" value="Зарегистрироваться" name="registration_submit"></label>
+        <form class="registration_form clr" id="registration_form">
+            <label>
+                Как Вас зовут?
+                <input class="registration_form_highlight" type="text" placeholder="Имя Фамилия" name="user_name">
+            </label>
+            <label>
+                Придумайте пароль
+                <input class="registration_form_highlight" type="password" placeholder="Ваш пароль" name="password_1">
+            </label>
+            <label>
+                Повторите пароль
+                <input class="registration_form_highlight" type="password" placeholder="Ваш пароль" name="password_2">
+            </label>
+            <label>
+                Ваш email
+                <input class="registration_form_highlight" type="email" placeholder="example@mail.com" name="user_email">
+            </label>
+            <label>
+                Откуда Вы?
+                <input class="registration_form_highlight" type="text" placeholder="Страна" name="user_country">
+            </label>
+            <label>
+                Ваш номер телефона
+                <input class="registration_form_highlight" type="tel" placeholder="380971234567" name="user_phone">
+            </label>
+            <label>
+                <input type="submit" value="Зарегистрироваться" name="registration_submit">
+            </label>
         </form>
     </div>
 </div>
+<script src="main/js/jquery.min.js"></script>
+<script src="main/js/script.js"></script>
 </body>

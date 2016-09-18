@@ -19,7 +19,7 @@ h2 { padding: 0 0 5px; font-weight: 600; font-size: 29px;}
 }
 
 .registration_form_title {
-    font-size: 55px;
+    font-size: 60px;
     display: block;
     margin: 0 0 30px;
     padding-top: 40px;
@@ -28,21 +28,27 @@ h2 { padding: 0 0 5px; font-weight: 600; font-size: 29px;}
     font-weight: 400;
 }
 
+.registration_form_error {
+    transition: all 200ms;
+    box-shadow: 0 0 5px 5px rgba(255, 0,0, 0.7);
+    -moz-box-shadow:0 0 5px 5px rgba(255, 0,0, 0.7);
+    -webkit-box-shadow:0 0 5px 5px rgba(255, 0,0, 0.7);
+}
+
 .registration_form {
     margin: 0 auto;
     padding: 10px 25px 20px;
     width: 800px;
     box-sizing: border-box;
     color: white;
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 30px;
+    line-height: 35px;
 }
 
 
 .registration_form label {
-    margin: 30px 0;
+    margin: 34px 0;
     display: block;
-
 }
 
 .registration_form input {
@@ -54,17 +60,59 @@ h2 { padding: 0 0 5px; font-weight: 600; font-size: 29px;}
     font-size: 23px;
     box-sizing: border-box;
     padding: 6px 6px 6px 18px;
+    outline: none;
+}
+
+.registration_form_highlight:focus {
+    transition: all 200ms;
+    box-shadow: 0 0 5px 5px rgba(255, 255,255, 0.7);
+    -moz-box-shadow:0 0 5px 5px rgba(255, 255,255, 0.7);
+    -webkit-box-shadow:0 0 5px 5px rgba(255, 255,255, 0.7);
 }
 
 .registration_form input[type="submit"] {
-    margin: 20px 237px 10px;
+    margin: 40px 227px 10px;
     background: transparent;
     padding: 10px;
     height: auto;
-    font-size: 28px;
-    width: 326px;
-    line-height: 28px;
+    font-size: 30px;
+    width: 346px;
+    line-height: 30px;
     box-sizing: border-box;
-    border: solid 2px white;
+    border: solid 4px white;
     color: white;
+    font-weight: 500;
+    transition: all 150ms;
+    -webkit-transition:  all 150ms;
+    -moz-transition:  all 150ms;
+    -o-transition:  all 150ms;
+}
+
+.registration_form input[type="submit"]:hover {
+    transition: all 150ms;
+    -webkit-transition:  all 150ms;
+    -moz-transition:  all 150ms;
+    -o-transition:  all 150ms;
+    background: white;
+    color: rgb(30, 144, 255);
+    border: solid 4px rgb(30, 144, 255);
+    box-shadow: 5px 10px 15px 2px rgba(31, 31,31, 0.5),  -5px 10px 15px 2px rgba(31, 31,31,0.5);
+    -moz-box-shadow:5px 10px 15px 2px rgba(31, 31,31, 0.5),  -5px 10px 15px 2px rgba(31, 31,31,0.5);
+    -webkit-box-shadow:5px 10px 15px 2px rgba(31, 31,31, 0.5),  -5px 10px 15px 2px rgba(31, 31,31,0.5);
+}
+
+.registration_form input[type="submit"]:active {
+    transition: all 50ms;
+    -webkit-transition:  all 50ms;
+    -moz-transition:  all 50ms;
+    -o-transition:  all 50ms;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    text-shadow: 3px 6px 4px rgba(31, 31,31, 0.4);
+}
+
+.mainpage_background {
+    background: url('../images/powee') left top;
+
 }
