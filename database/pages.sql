@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Сен 18 2016 г., 09:31
+-- Время создания: Сен 18 2016 г., 21:08
 -- Версия сервера: 10.1.9-MariaDB
 -- Версия PHP: 5.6.15
 
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База данных: `lesson-1`
+-- База данных: `hakaton`
 --
 
 -- --------------------------------------------------------
@@ -32,23 +32,25 @@ CREATE TABLE `pages` (
   `link` varchar(64) DEFAULT NULL,
   `description` text,
   `active` tinyint(1) DEFAULT '1',
-  `grant` tinyint(1) DEFAULT '0'
+  `grant` tinyint(1) DEFAULT '0',
+  `class` varchar(255) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Дамп данных таблицы `pages`
 --
 
-INSERT INTO `pages` (`id`, `title`, `link`, `description`, `active`, `grant`) VALUES
-(1, 'Home', 'home.html', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel auctor nulla. Nulla porttitor tempus metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut nibh augue, tristique sit amet turpis ut, pretium venenatis massa. Aliquam sit amet arcu lacus. Nulla sollicitudin nunc vel magna ullamcorper dapibus. Etiam lacinia dolor in sapien egestas, quis consectetur justo egestas. ', 1, 0),
-(8, 'Polish', 'polish.html', 'My Polish words', 1, 1),
-(9, 'Temp', 'temp.html', 'tmp', 0, 0),
-(2, 'Blog', 'blog.html', 'Breaking News', 1, 0),
-(3, 'Contact Us', 'contact.html', 'Contact Us', 1, 0),
-(4, 'Testimonial', 'testimonial.html', 'Testimonial', 1, 0),
-(5, 'Gallery', 'gallery.html', 'Gallery', 1, 1),
-(6, 'Login', 'login.html', 'login\n', 1, 2),
-(7, 'Logout', 'login.html?action=signout', 'Logout', 1, 1);
+INSERT INTO `pages` (`id`, `title`, `link`, `description`, `active`, `grant`, `class`) VALUES
+(1, 'Главная', 'home', 'Общая информация', 1, 0, ''),
+(8, 'Создать событие', 'add_event', 'Создать событие', 1, 1, 'evant_animate'),
+(9, 'Создать новость', 'add_news', 'Создать новость', 1, 1, 'news_animate'),
+(2, 'Новости', 'news', 'Последние новости', 1, 0, ''),
+(3, 'События', 'events', 'События в мире танцев', 1, 0, ''),
+(4, 'О нас', 'about', 'О нас', 1, 0, ''),
+(5, 'Связь с нами', 'contact', 'Связаться с нами', 1, 0, 'connect'),
+(6, 'Вход', 'login#', 'Вход в систему', 1, 2, 'log_animate'),
+(7, 'Выход', 'out', 'Выход из системы', 1, 1, ''),
+(10, 'Регистрация', 'home#registration_form', 'register', 1, 2, '');
 
 --
 -- Индексы сохранённых таблиц
@@ -68,7 +70,7 @@ ALTER TABLE `pages`
 -- AUTO_INCREMENT для таблицы `pages`
 --
 ALTER TABLE `pages`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

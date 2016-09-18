@@ -7,11 +7,11 @@ class Login
         $db = Db::getConnection();
         $db->query("SET NAMES 'utf8'");
 
-        $result = $db->query("SELECT * FROM `users` WHERE `login` = $user");
-        $user = $result->fetch_assoc();
+        $result = $db->query("SELECT * FROM `users` WHERE `login` = '$user'");
+        $get_user = $result->fetch_assoc();
 
         $db->close();
-        return $user;
+        return $get_user;
     }
 
     public static function get($user)

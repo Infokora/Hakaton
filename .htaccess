@@ -7,11 +7,3 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
 RewriteRule ^(.*)$ index.php
-#
-#RewriteCond %{REQUEST_FILENAME} !-f
-#RewriteRule ^img-(.*)-extension-([a-zA-Z]{3,4})$ upload/$1.$2 [QSA,L]
-#
-#RewriteRule ^([a-zA-Z]+)-([0-9]+)\.html$ index.php?page=$1&action=view&id=$2 [QSA,L]
-#RewriteRule ^([a-z]+)/(.*)\.html$ index.php?folder=$1&page=$2 [QSA,L]
-#RewriteRule ^(.*)\.html$ index.php?page=$1 [QSA,L]
-

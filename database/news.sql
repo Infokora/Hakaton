@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Сен 17 2016 г., 22:23
+-- Время создания: Сен 18 2016 г., 21:08
 -- Версия сервера: 10.1.9-MariaDB
 -- Версия PHP: 5.6.15
 
@@ -17,16 +17,16 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База данных: `testing`
+-- База данных: `hakaton`
 --
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `publication`
+-- Структура таблицы `news`
 --
 
-CREATE TABLE `publication` (
+CREATE TABLE `news` (
   `id` tinyint(4) NOT NULL,
   `title` varchar(255) NOT NULL,
   `date` date NOT NULL,
@@ -38,10 +38,10 @@ CREATE TABLE `publication` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `publication`
+-- Дамп данных таблицы `news`
 --
 
-INSERT INTO `publication` (`id`, `title`, `date`, `short_content`, `content`, `author_name`, `preview`, `type`) VALUES
+INSERT INTO `news` (`id`, `title`, `date`, `short_content`, `content`, `author_name`, `preview`, `type`) VALUES
 (1, 'Swimming with dolphins may be banned', '2016-08-31', 'Authorities in Hawaii are proposing a ban on the popular tourist activity of swimming with dolphins off the Hawaiian coast.', '', 'David', './images/1.jpg', 'NewsPublication'),
 (2, 'Colombia and FARC rebels sign peace deal', '2016-08-28', 'Colombias government signed a peace deal with the rebel group FARC. The deal ends 52 years of fighting.', '', 'April', './images/2.jpg', 'NewsPublication'),
 (3, 'Study shows there are two divorce seasons', '2016-08-25', 'Couples might want to put a little extra effort into their marriage just before March and August every year.', '', 'George', './images/3.jpg', 'ArticlePublication'),
@@ -53,9 +53,9 @@ INSERT INTO `publication` (`id`, `title`, `date`, `short_content`, `content`, `a
 --
 
 --
--- Индексы таблицы `publication`
+-- Индексы таблицы `news`
 --
-ALTER TABLE `publication`
+ALTER TABLE `news`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `author_name` (`author_name`);
 
@@ -64,9 +64,9 @@ ALTER TABLE `publication`
 --
 
 --
--- AUTO_INCREMENT для таблицы `publication`
+-- AUTO_INCREMENT для таблицы `news`
 --
-ALTER TABLE `publication`
+ALTER TABLE `news`
   MODIFY `id` tinyint(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
