@@ -155,6 +155,7 @@ h2 { padding: 0 0 5px; font-weight: 600; font-size: 29px;}
 
 .info_container{
     padding-bottom: 60px;
+    margin-top: 500px;
 }
 
 .info_sections {
@@ -185,3 +186,4 @@ h2 { padding: 0 0 5px; font-weight: 600; font-size: 29px;}
     font-size: 15px;
     line-height: 25px;
 }
+

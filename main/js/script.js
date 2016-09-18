@@ -41,10 +41,18 @@ $(function(){
       }
    });
 
-
-
-
+   var $cont=$('.info_container');
+   // var $h=$infoContainer.offset();
+   $('html, body').add(window).add(document).scroll(function (e) {
+      var $s = $('html body').scrollTop()+ $(window).height() + 4*$('#ppp').height();
+      console.log($cont.offset().top);
+      if ($s > $cont.offset().top) {
+         $cont.animate({marginTop:"50px"},700)
+      }
+   })
 });
+
+//$('html body').scrollTop()
 
 
 
