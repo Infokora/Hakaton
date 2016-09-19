@@ -2,10 +2,15 @@
 
 class Navigation
 {
-    public function getLink($data, $current = '')
+    public function getLink($data, $current = '', $id = '')
     {
+        if ($id !== ''){
+            $link = ($current == $data['link']) ? '#' : (($data['description'] == 'popup') ? $id. $data['link'] : PATH . $data['link']);
+        } else {
+            $link = ($current == $data['link']) ? '#' : (($data['description'] == 'popup') ? $current. $data['link'] : PATH . $data['link']);
+        }
         $class = ($data['class'] !== '') ? ' class="' . $data['class'] . '"' : ' class=""';
-        $link = ($current == $data['link']) ? '#' : (($data['description'] == 'popup') ? $current. $data['link'] : PATH . $data['link']);
+
         return '<li' . $class . '><a href="' . $link . '">' . $data['title'] . '</a></li>';
     }
 
@@ -31,7 +36,7 @@ class Navigation
         return $nav_from_db;
     }
 
-    public function createNavContent($page)
+    public function createNavContent($page, $id)
     {
         $navigation = $this->getNavigation();
 
@@ -39,16 +44,16 @@ class Navigation
         foreach ($navigation as $nav) {
             if (($nav['grant'] == ACCESS)) {
                 if (isset($_SESSION['user_access']) && $_SESSION['user_access'] == ACCESS) {
-                    $navContent .= $this->getLink($nav, $page);
+                    $navContent .= $this->getLink($nav, $page, $id);
                 }
             }
             if (($nav['grant'] == INLOGIN)) {
                 if (empty($_SESSION['user_access'])) {
-                    $navContent .= $this->getLink($nav, $page);
+                    $navContent .= $this->getLink($nav, $page, $id);
                 }
             }
             if ($nav['grant'] == ANY_ACCESS) {
-                $navContent .= $this->getLink($nav, $page);
+                $navContent .= $this->getLink($nav, $page, $id);
             }
         }
         $navContent .= '</nav>';

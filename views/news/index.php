@@ -6,7 +6,7 @@ $file = ROOT.'templates/news/template.html';
 $content = file_get_contents($file);
 $navigation = new Navigation();
 
-$nav_content = $navigation->createNavContent('news');
+$nav_content = $navigation->createNavContent('news', '');
 
 $content = str_replace('[navigation]', $nav_content, $content);
 

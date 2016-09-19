@@ -7,7 +7,7 @@ $file2 = ROOT . 'templates/news/single_news.tpl';
 $single_news = file_get_contents($file2);
 
 $navigation = new Navigation();
-$nav_content = $navigation->createNavContent('news');
+$nav_content = $navigation->createNavContent('news', $newsItem['id']);
 $content = str_replace('[navigation]', $nav_content, $content);
 
 $single_news = str_replace('[src]', '../'.$newsItem['preview'], $single_news);
