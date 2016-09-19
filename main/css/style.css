@@ -1,8 +1,8 @@
  .resize{
 	max-width:1400px;
 	margin:0 auto; 
-	background-color:#1E90FF;	
-	height:1000px;
+	background-color:#1E90FF;
+	height:3000px;	
 }
 #wrap{
 	
@@ -29,7 +29,6 @@ body, p{
 }
 .nav li{
 	float:left;
-
 }
 .nav li a{
 	display:block;
@@ -202,9 +201,16 @@ body, p{
 	display:block;
 	background-color:rgba(0,0,0,0);
 }
+.form_in{
+	padding-bottom:20px;
+}
 #jereb_run{
-	color:#1E90FF;
-	font-size:20px;
-	padding:0 35px;
-	border:2px solid #1E90FF;
+	font-size:30px;
+}
+.spusok{
+	margin-left:25px;
+	padding:20px;
+}
+.spusok li{
+	padding:10px;	
 }
