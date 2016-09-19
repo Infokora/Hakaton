@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Сен 19 2016 г., 13:29
+-- Время создания: Сен 19 2016 г., 23:54
 -- Версия сервера: 10.1.9-MariaDB
 -- Версия PHP: 5.6.15
 
@@ -42,8 +42,8 @@ CREATE TABLE `pages` (
 
 INSERT INTO `pages` (`id`, `title`, `link`, `description`, `active`, `grant`, `class`) VALUES
 (1, 'Главная', 'home', 'without_popup', 1, 0, ''),
-(8, 'Создать событие', 'add_event', 'without_popup', 1, 1, 'evant_animate'),
-(9, 'Создать новость', 'add_news', 'without_popup', 1, 1, 'news_animate'),
+(8, 'Создать событие', 'addevent', 'without_popup', 1, 1, 'evant_animate'),
+(9, 'Создать новость', 'addnews', 'without_popup', 1, 1, 'news_animate'),
 (2, 'Новости', 'news', 'without_popup', 1, 0, ''),
 (3, 'События', 'events', 'without_popup', 1, 0, ''),
 (4, 'О нас', 'about', 'without_popup', 1, 0, ''),

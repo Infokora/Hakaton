@@ -19,12 +19,12 @@ class AddnewsController
         if (isset($_POST)) {
             if (!empty($_POST['title']) && !empty($_POST['short_content']) && !empty($_POST['content'])) {
                 Addnews::createNews();
-                echo 'All is done, Boss';
-            } else {
-                echo 'NooooO!';
+//                echo 'All is done, Boss';
+//            } else {
+//                echo 'NooooO!';
             }
-
         }
+        header('Location: ' . PATH . $_POST['redirect']);
         return true;
     }
 }
