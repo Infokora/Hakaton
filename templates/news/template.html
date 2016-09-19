@@ -40,14 +40,17 @@
                 </div>
             </div>
         </div>
+
         <!-- log in -->
         <div id="overlay_log"></div>
         <div class="form_log">
-            <form>
-                <label for="login_in"><input id="login_in" type="login" placeholder="Введите логин"></label>
-                <label for="password_in"><input id="password_in" type="password" placeholder="Введите пароль"></label>
-                <label for=""><a href="#">Войти</a></label>
-                <a href="#" class="reg">Зарегистрироватся</a>
+            <form method="post">
+                <label for="login_in"><input name="log_in" id="login_in" type="login"
+                                             placeholder="Введите логин"></label>
+                <label for="password_in"><input name="pass_in" id="password_in" type="password"
+                                                placeholder="Введите пароль"></label>
+                <label for=""><a href="">Войти</a></label>
+                <a href="#registration_form" class="reg">Зарегистрироватся</a>
             </form>
         </div>
 
@@ -69,6 +72,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 </div>
 

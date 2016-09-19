@@ -1,7 +1,9 @@
 <div class="row">
     <div class="col-sm-6">
+        <img src="[src]" alt="news_image" width="35%">
         <h3>[title]</h3>
-        <p><q>[short_content]</q></p>
-        <p>Author: [author_name]</p>
+        <p>[short_content]</p>
+        <p>Автор: [author_name]</p>
+        <h4>Дата: [date]</h4>
     </div>
 </div>
