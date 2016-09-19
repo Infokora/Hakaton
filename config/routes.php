@@ -7,6 +7,8 @@ return array(
     'home' => 'home/index',
     'login' => 'login/index',
     'out' => 'login/out',
+    'addnews' => 'addnews/index',
+    'record' => 'addnews/record',
     '' => 'home/index',
-//    '' => 'home/index',
 );
+//    '' => 'home/index',

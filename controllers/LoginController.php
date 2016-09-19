@@ -20,6 +20,7 @@ class LoginController
             if ($_POST['log_in'] == $user['login'] && !empty($user)) {
                 if (md5($_POST['pass_in']) == $user['password']) {
                     $_SESSION['user_access'] = $user['grant'];
+                    $_SESSION['current_user'] = $user['FIO'];
                 }
             }
         }
