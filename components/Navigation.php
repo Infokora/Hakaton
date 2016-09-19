@@ -4,17 +4,9 @@ class Navigation
 {
     public function getLink($data, $current = '')
     {
-        if ($data['class'] !== '') {
-            $active = ' class="' . (($current == $data['link']) ? 'active' : '') . ' '.$data['class'].'"';
-            $link = ($current == $data['link']) ? '#' : PATH . $data['link'];
-//            $link = ($current == $data['link']) ? '#' : '#';
-            return '<li' . $active . '><a href="' . $link . '">' . $data['title'] . '</a></li>';
-        } elseif ($data['class'] == '') {
-            $active = ' class="' . (($current == $data['link']) ? 'active' : '') . '"';
-            $link = ($current == $data['link']) ? '#' : PATH . $data['link'];
-//            $link = ($current == $data['link']) ? '#' : '#';
-            return '<li' . $active . '><a href="' . $link . '">' . $data['title'] . '</a></li>';
-        }
+        $class = ($data['class'] !== '') ? ' class="' . $data['class'] . '"' : ' class=""';
+        $link = ($current == $data['link']) ? '#' : (($data['description'] == 'popup') ? $current. $data['link'] : PATH . $data['link']);
+        return '<li' . $class . '><a href="' . $link . '">' . $data['title'] . '</a></li>';
     }
 
     public function getNavigation()
