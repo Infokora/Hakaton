@@ -153,7 +153,6 @@ body, p{
 .resize .create_news{
 	position:relative;
 	top:100px;
-	left:25%;
 	width:50%;
 	margin:0 auto;
 	border-radius:10px;
@@ -202,4 +201,10 @@ body, p{
 	border:0;
 	display:block;
 	background-color:rgba(0,0,0,0);
+}
+#jereb_run{
+	color:#1E90FF;
+	font-size:20px;
+	padding:0 35px;
+	border:2px solid #1E90FF;
 }

@@ -44,28 +44,44 @@ $(function(){
 		$(this).css('transition','box-shadow 0.2s');
 	});
 
-	var kilcPar=$('.one_team li');
-	function randNum(min, max) {
-	   return Math.floor(Math.random() * (kilcPar.length - 2 + 1)) + 2;
-	};
 
-	var masTwo;
-	masTwo= $('.two_team li');
- var masRand=[];
 
-	$('jereb_run').click(function(){
-			for(i=0; i<masTwo.length; i++){
-		var a=randNum();
-		masRand[i]=masTwo[a];
-		masTwo[a].remove();
-	};
-		var a;
-		var masSpuska = [];                                      
-		for(i=0; i<masTwo.length; i++) {
-			kilcPar[i].append('<li>'+masTwo[i].html()+'</li>');
+	$('#jereb_run').on('click',function(){
+		var kilcPar=$('.one_team li');
+		var numReserve = [];
+		while (numReserve.length < kilcPar.length) {
+  			var randomNumber = Math.ceil(Math.random() * kilcPar.length);
+  			var found = false;
+  			for (var i = 0; i < numReserve.length; i++) {
+  				if (numReserve[i] === randomNumber){
+   				found = true;
+   				break;
+  				};
+  			};
+  			if (!found) { numReserve[numReserve.length]=randomNumber; }
 		};
+		console.table(numReserve)
+		var masTwo=[0];
+		$('.two_team li').each(function(i){
+			masTwo[i+1]= $(this).html();
+		});
+		console.table(masTwo);
+
+ 		var masRand=[];
+ 		for(i=0;i<kilcPar.length;i++){
+ 			let a=numReserve[i];
+			masRand[i]=masTwo[a];
+		};
+		console.table(masRand);
+		kilcPar.each(function(i){
+			$(this).append(' - '+masRand[i])
+		});
+
+		$('.two_team').empty();
+
+		$('#jereb_run').off('click');
 	});
-	
+
 
 
 
