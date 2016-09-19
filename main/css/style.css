@@ -157,15 +157,15 @@ body, p{
 	border-radius:10px;
 	background:white;
 }
-.create_news .head{
-	background:#555;
-}
 .head h2{
 	font-size:35px;
 	padding:20px;
 	text-align:center;
 	color:white;
 	box-shadow:0 3px 5px rgba(0,0,0,0.7);
+}
+.create_news .head{
+	background:#555;
 }
 .create_news{
 		border-radius:10px;
@@ -213,4 +213,74 @@ body, p{
 }
 .spusok li{
 	padding:10px;	
+}
+.form_math ul{
+	width:250px;
+}
+.cenu ul{
+	float:right;
+	margin-top:-790px;
+}
+.form_math form,.cenu{
+	margin-top:20px;
+	padding-bottom:50px;
+}
+.form_math label, .cenu li{
+	width:80%;
+	padding:10px;
+	margin-bottom:10px;
+	display:block;
+	color:#1E90FF;
+	cursor:pointer;
+	background:white;
+	border:1px solid #1E90FF;
+}
+.form_math input, .cenu input{
+	width:70%;
+	font-size:20px;
+	border:0;
+	display:block;
+	background-color:rgba(0,0,0,0);
+}
+.form_math,.cenu li{
+	padding-bottom:20px;
+}
+.form_math .last_button{
+	text-align:center;
+	margin:0 auto;
+	width:70%;
+	background:#32CD32;
+}
+.cenu{
+	padding-top:20px;
+	float:right;
+	display:none;
+}
+.cenu input{
+	padding-top:4px;
+	width:100%;
+}
+.the_final_6 {
+    display: none;
+    z-index: 100;
+    width: 500px;
+    min-height: 600px;
+    background: white;
+    border: solid 5px rgb(30, 144, 255);
+    color: rgb(30, 144, 255);
+    position: fixed;
+    top: 50px;
+    margin-left: 50%;
+    left: -300px;
+}
+.the_final_6 ul{
+	margin:0 auto;
+}
+
+.the_final_6 li {
+    list-style: decimal;
+}
+
+.the_final_6 li:last-child {
+    list-style: none;
 }
