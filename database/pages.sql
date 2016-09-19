@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Сен 19 2016 г., 11:36
+-- Время создания: Сен 19 2016 г., 13:29
 -- Версия сервера: 10.1.9-MariaDB
 -- Версия PHP: 5.6.15
 
@@ -41,16 +41,16 @@ CREATE TABLE `pages` (
 --
 
 INSERT INTO `pages` (`id`, `title`, `link`, `description`, `active`, `grant`, `class`) VALUES
-(1, 'Главная', 'home', 'Общая информация', 1, 0, ''),
-(8, 'Создать событие', 'add_event', 'Создать событие', 1, 1, 'evant_animate'),
-(9, 'Создать новость', 'add_news', 'Создать новость', 1, 1, 'news_animate'),
-(2, 'Новости', 'news', 'Последние новости', 1, 0, ''),
-(3, 'События', 'events', 'События в мире танцев', 1, 0, ''),
-(4, 'О нас', 'home#', 'О нас', 1, 0, ''),
-(5, 'Связь с нами', 'home#', 'home#', 1, 0, 'connect'),
-(6, 'Вход', 'home#', 'Вход в систему', 1, 2, 'log_animate'),
-(7, 'Выход', 'out', 'Выход из системы', 1, 1, ''),
-(10, 'Регистрация', 'home#registration_form', 'register', 1, 2, '');
+(1, 'Главная', 'home', 'without_popup', 1, 0, ''),
+(8, 'Создать событие', 'add_event', 'without_popup', 1, 1, 'evant_animate'),
+(9, 'Создать новость', 'add_news', 'without_popup', 1, 1, 'news_animate'),
+(2, 'Новости', 'news', 'without_popup', 1, 0, ''),
+(3, 'События', 'events', 'without_popup', 1, 0, ''),
+(4, 'О нас', 'about', 'without_popup', 1, 0, ''),
+(5, 'Связь с нами', '#', 'popup', 1, 0, 'connect'),
+(6, 'Вход', '#', 'popup', 1, 2, 'log_animate'),
+(7, 'Выход', 'out', 'without_popup', 1, 1, ''),
+(10, 'Регистрация', 'home#registration_form', 'without_popup', 1, 2, '');
 
 --
 -- Индексы сохранённых таблиц
