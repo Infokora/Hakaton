@@ -17,6 +17,7 @@ foreach ($newsList as $news){
     $tpl = str_replace('[short_content]', $news['short_content'], $tpl);
     $tpl = str_replace('[author_name]', $news['author_name'], $tpl);
     $tpl = str_replace('[date]', $news['date'], $tpl);
+    $tpl = str_replace('[read_more_ref]', PATH.'news/'.$news['id'], $tpl);
     $content = str_replace('text0'.$news['id'], $tpl, $content);
 }
 

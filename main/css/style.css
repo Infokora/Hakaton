@@ -493,3 +493,31 @@ section p{color:white; font-weight: 400; padding:0 15px; overflow: hidden; text-
 	width: 100%;
 	color: white;
 }
+
+.row {
+	width: 100%;
+	text-align: center;
+}
+
+.col-sm-6 p {
+	color: #36ff25;
+}
+
+.col-sm-6 a {
+	color: #0e0cff;
+}
+
+.col-sm-6 a:hover {
+	color: #ffec38;
+	text-decoration: underline;
+}
+
+.image_news img {
+	display: inline-block;
+}
+
+.image_news {
+	text-align: center;
+	width: 30%;
+}
+
