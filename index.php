@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
@@ -6,7 +7,6 @@ error_reporting(E_ALL);
 define('ROOT', __DIR__.'/');
 define('PATH', 'http://localhost/Hakaton/');
 //echo ROOT;
-session_start();
 //$_SESSION['user_access'] = 1;
 unset($_SESSION['user_access']);
 require_once (ROOT.'components/Db.php');

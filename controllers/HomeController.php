@@ -6,6 +6,9 @@ class HomeController
 {
     public function actionIndex()
     {
+        echo '<pre>';
+        var_export($_POST);
+        echo '</pre>';
 
         $home_content = Home::getHomeContent();
 

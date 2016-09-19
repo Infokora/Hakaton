@@ -14,9 +14,9 @@ class Login
         return $get_user;
     }
 
-    public static function get($user)
-    {
-        return $user;
-
-    }
+//    public static function get($user)
+//    {
+//        return $user;
+//
+//    }
 }

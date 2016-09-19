@@ -110,13 +110,14 @@
     <!-- log in -->
     <div id="overlay_log"></div>
     <div class="form_log">
-        <form method="post">
+        <form method="POST" action="login">
             <label for="login_in"><input name="log_in" id="login_in" type="login"
                                          placeholder="Введите логин"></label>
             <label for="password_in"><input name="pass_in" id="password_in" type="password"
                                             placeholder="Введите пароль"></label>
-            <label for=""><a href="">Войти</a></label>
-            <a href="#registration_form" class="reg">Зарегистрироватся</a>
+            <label><input name="login_sub" id="login_sub" type="submit" value="Войти"></label>
+            <input name="redirect" type="hidden" value="home">
+            <a href="home#registration_form" class="reg">Зарегистрироватся</a>
         </form>
     </div>
 
