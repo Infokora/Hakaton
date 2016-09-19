@@ -32,6 +32,8 @@ class Router
 
     public function run()
     {
+//        session_start();
+
         $uri = $this->getURI();
 //        var_dump($this->routes);
 //        echo $uri;

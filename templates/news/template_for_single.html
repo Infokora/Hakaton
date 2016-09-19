@@ -5,7 +5,6 @@
     <title>Document</title>
     <link type="text/css" rel="stylesheet" href="../main/css/reset.css">
     <link href="../main/css/style.css" type="text/css" rel="stylesheet">
-    <script src="../main/js/jquery.min.js"></script>
 </head>
 <body>
 <div id="wrap">
@@ -18,18 +17,19 @@
     </main>
     [single_news]
 
-        <!-- log in -->
-        <div id="overlay_log"></div>
-        <div class="form_log">
-            <form method="post">
-                <label for="login_in"><input name="log_in" id="login_in" type="login"
-                                             placeholder="Введите логин"></label>
-                <label for="password_in"><input name="pass_in" id="password_in" type="password"
-                                                placeholder="Введите пароль"></label>
-                <label for=""><a href="">Войти</a></label>
-                <a href="#registration_form" class="reg">Зарегистрироватся</a>
-            </form>
-        </div>
+    <!-- log in -->
+    <div id="overlay_log"></div>
+    <div class="form_log">
+        <form method="POST" action="../login">
+            <label for="login_in"><input name="log_in" id="login_in" type="login"
+                                         placeholder="Введите логин"></label>
+            <label for="password_in"><input name="pass_in" id="password_in" type="password"
+                                            placeholder="Введите пароль"></label>
+            <label><input name="login_sub" id="login_sub" type="submit" value="Войти"></label>
+            <input name="redirect" type="hidden" value="news">
+            <a href="home#registration_form" class="reg">Зарегистрироватся</a>
+        </form>
+    </div>
 
         <!-- popup -->
         <div id="overlay"></div>
@@ -52,8 +52,7 @@
 
     </div>
 </div>
-
+<script src="../main/js/jquery.min.js"></script>
 <script type="text/javascript" src="../main/js/script.js"></script>
-<!--<link rel="stylesheet" href="main/css/reset.css">-->
 </body>
 </html>

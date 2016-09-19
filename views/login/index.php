@@ -1,6 +1,6 @@
 <?php
-
-echo session_name();
+/*
+//echo session_name();
 $file = ROOT.'templates/login/template.html';
 $content = file_get_contents($file);
 
@@ -9,6 +9,6 @@ $nav_content = $navigation->createNavContent('login', '');
 
 $content = str_replace('[navigation]', $nav_content, $content);
 
-echo $content;
+echo $content;*/
 
-//header('Location: '. PATH. $_POST['redirect']);
+header('Location: '. PATH. $_POST['redirect']);

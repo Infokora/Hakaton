@@ -4,15 +4,16 @@ include_once(ROOT . 'models/Login.php');
 
 class LoginController
 {
-    public function actionIndex(){
+    public function actionIndex()
+    {
 
-    //        echo '<pre>';
-    //        var_export($_POST);
-    //        echo '</pre>';
-    //        $user = Login::getUserFromBase($_POST['log_in']);
-    //        echo '<pre>';
-    //        var_export($user);
-    //        echo '</pre>';
+        //        echo '<pre>';
+        //        var_export($_POST);
+        //        echo '</pre>';
+        //        $user = Login::getUserFromBase($_POST['log_in']);
+        //        echo '<pre>';
+        //        var_export($user);
+        //        echo '</pre>';
 
         if (isset($_POST['log_in']) && isset($_POST['pass_in'])) {
             $user = Login::getUserFromBase($_POST['log_in']);
@@ -23,10 +24,17 @@ class LoginController
             }
         }
 
-
         require_once(ROOT . 'views/login/index.php');
 
         return true;
+    }
 
+    public function actionOut()
+    {
+
+        unset($_SESSION['user_access']);
+        header('Location: '. PATH. 'home');
+
+        return true;
     }
 }

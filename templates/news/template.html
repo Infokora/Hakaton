@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link type="text/css" rel="stylesheet" href="main/css/reset.css">
-    <link href="main/css/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main/css/style.css">
+
     <script src="main/js/jquery.min.js"></script>
 </head>
 <body>
@@ -43,13 +44,14 @@
         <!-- log in -->
         <div id="overlay_log"></div>
         <div class="form_log">
-            <form method="post">
+            <form method="POST" action="login">
                 <label for="login_in"><input name="log_in" id="login_in" type="login"
                                              placeholder="Введите логин"></label>
                 <label for="password_in"><input name="pass_in" id="password_in" type="password"
                                                 placeholder="Введите пароль"></label>
-                <label for=""><a href="http://localhost/Hakaton/login">Войти</a></label>
-                <a href="#registration_form" class="reg">Зарегистрироватся</a>
+                <label><input name="login_sub" id="login_sub" type="submit" value="Войти"></label>
+                <input name="redirect" type="hidden" value="news">
+                <a href="home#registration_form" class="reg">Зарегистрироватся</a>
             </form>
         </div>
         <!-- popup -->
@@ -84,7 +86,7 @@
     <p class="buttons"><a href="#">Ok</a></p>
 </div>-->
 
+<script src="main/js/jquery.min.js"></script>
 <script type="text/javascript" src="main/js/script.js"></script>
-<!--<link rel="stylesheet" href="main/css/reset.css">-->
 </body>
 </html>

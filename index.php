@@ -8,7 +8,7 @@ define('ROOT', __DIR__.'/');
 define('PATH', 'http://localhost/Hakaton/');
 //echo ROOT;
 //$_SESSION['user_access'] = 1;
-unset($_SESSION['user_access']);
+//unset($_SESSION['user_access']);
 require_once (ROOT.'components/Db.php');
 require_once (ROOT.'components/Navigation.php');
 require_once (ROOT.'components/Router.php');
