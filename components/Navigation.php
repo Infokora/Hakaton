@@ -4,10 +4,10 @@ class Navigation
 {
     public function getLink($data, $current = '', $id = '')
     {
-        if ($id !== ''){
-            $link = ($current == $data['link']) ? '#' : (($data['description'] == 'popup') ? $id. $data['link'] : PATH . $data['link']);
+        if ($id !== '') {
+            $link = ($current == $data['link']) ? '#' : (($data['description'] == 'popup') ? $id . $data['link'] : PATH . $data['link']);
         } else {
-            $link = ($current == $data['link']) ? '#' : (($data['description'] == 'popup') ? $current. $data['link'] : PATH . $data['link']);
+            $link = ($current == $data['link']) ? '#' : (($data['description'] == 'popup') ? $current . $data['link'] : PATH . $data['link']);
         }
         $class = ($data['class'] !== '') ? ' class="' . $data['class'] . '"' : ' class=""';
 
@@ -42,8 +42,13 @@ class Navigation
 
         $navContent = '<nav class="nav">';
         foreach ($navigation as $nav) {
-            if (($nav['grant'] == ACCESS)) {
-                if (isset($_SESSION['user_access']) && $_SESSION['user_access'] == ACCESS) {
+            if (($nav['grant'] == ADMIN_ACCESS)) {
+                if (isset($_SESSION['user_access']) && $_SESSION['user_access'] == ADMIN_ACCESS) {
+                    $navContent .= $this->getLink($nav, $page, $id);
+                }
+            }
+            if (($nav['grant'] == USER_ACCESS)) {
+                if (isset($_SESSION['user_access']) && ($_SESSION['user_access'] == USER_ACCESS || $_SESSION['user_access'] == ADMIN_ACCESS)) {
                     $navContent .= $this->getLink($nav, $page, $id);
                 }
             }
