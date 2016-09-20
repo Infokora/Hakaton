@@ -88,7 +88,7 @@ $(function(){
 		$('.two_team').empty();
 
 		$(this).text('Показать результаты');
-		$('.cenu').css('display','block');
+		$('.cenu ul').css('display','inline-block');
 		$('#jereb_run').off('click');
 
 			//final 10 6
