@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Сен 20 2016 г., 10:20
+-- Время создания: Сен 20 2016 г., 18:50
 -- Версия сервера: 10.1.9-MariaDB
 -- Версия PHP: 5.6.15
 
@@ -43,7 +43,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `login`, `password`, `grant`, `active`, `FIO`, `email`, `country`, `phone`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 1, 1, 'Roma Slobodeniuk', 'romsl@i.ua', 'Ukraine', 380673800836),
+(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 4, 1, 'Roma Slobodeniuk', 'romsl@i.ua', 'Ukraine', 380673800836),
 (2, 'petro1989', 'f2f61c2ab367c3a99c9ec7306f222c7f', 1, 1, 'Пётр Николаевич', 'petia@mail.ua', 'Polska', 48692600399),
 (3, 'kirius170', 'a4b3f0b3e94fd45bea7f4171d7b1a610', 1, 1, 'Киррил Новицки', 'kiril@gmail.com', 'Украина', 380673332211);
 
