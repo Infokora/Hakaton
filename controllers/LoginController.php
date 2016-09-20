@@ -34,8 +34,44 @@ class LoginController
     {
 
         unset($_SESSION['user_access']);
-        header('Location: '. PATH. 'home');
+        header('Location: ' . PATH . 'home');
 
         return true;
     }
+
+    public function actionRegistration()
+    {
+        echo 'Hello, this is the LoginController --> actionRegistration';
+        echo '<pre>';
+        var_export($_POST);
+        echo '</pre>';
+
+        if (isset($_POST)) {
+            if (!empty($_POST['user_name']) && !empty($_POST['user_login']) &&
+                !empty($_POST['password_1']) && !empty($_POST['password_2']) &&
+                !empty($_POST['user_email']) && !empty($_POST['user_country']) &&
+                !empty($_POST['user_phone'])
+            ) {
+                $user = Login::getUserFromBase($_POST['user_login']);
+                $user_email = Login::getUserEmailFromBase($_POST['user_email']);
+                if (empty($user) && empty($user_email)) {
+                    $insertion = Login::insertUser();
+                    if ($insertion) {
+
+                        echo '<h1>SUCCESS!</h1>';
+                    } else {
+                        echo '<h1>FAIL to insert the data of a new USER</h1>';
+                    }
+
+                } else {
+                    echo '<h1>FAIL! - Such User Login or Email is already exist</h1>';
+                }
+            }
+        }
+//        unset($_SESSION['user_access']);
+        header('Location: '. PATH. $_POST['redirect']);
+
+        return true;
+    }
+
 }

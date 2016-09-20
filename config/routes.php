@@ -6,6 +6,7 @@ return array(
     'news' => 'news/index',
     'home' => 'home/index',
     'login' => 'login/index',
+    'registration' => 'login/registration',
     'out' => 'login/out',
     'addnews' => 'addnews/index',
     'record' => 'addnews/record',

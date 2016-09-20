@@ -73,10 +73,14 @@
     <div class="blue_line">
         <div class="mainwrapper" id="registration_form">
             <h2 class="registration_form_title">Регистрация на сайте</h2>
-            <form class="registration_form clr">
+            <form class="registration_form clr" method="post" action="registration">
                 <label>
                     Как Вас зовут?
                     <input class="registration_form_highlight" type="text" placeholder="Имя Фамилия" name="user_name">
+                </label>
+                <label>
+                    Придумайте логин
+                    <input class="registration_form_highlight" type="text" placeholder="Ваш логин" name="user_login">
                 </label>
                 <label>
                     Придумайте пароль
@@ -104,6 +108,7 @@
                 <label>
                     <input type="submit" value="Зарегистрироваться" name="registration_submit">
                 </label>
+                <input type="hidden" name="redirect" value="">
             </form>
         </div>
     </div>
