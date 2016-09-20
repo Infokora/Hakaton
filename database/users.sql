@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Сен 19 2016 г., 23:55
+-- Время создания: Сен 20 2016 г., 10:20
 -- Версия сервера: 10.1.9-MariaDB
 -- Версия PHP: 5.6.15
 
@@ -44,7 +44,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `login`, `password`, `grant`, `active`, `FIO`, `email`, `country`, `phone`) VALUES
 (1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 1, 1, 'Roma Slobodeniuk', 'romsl@i.ua', 'Ukraine', 380673800836),
-(2, 'User1', '', 1, 1, 'User1_fio', '', '', 0);
+(2, 'petro1989', 'f2f61c2ab367c3a99c9ec7306f222c7f', 1, 1, 'Пётр Николаевич', 'petia@mail.ua', 'Polska', 48692600399),
+(3, 'kirius170', 'a4b3f0b3e94fd45bea7f4171d7b1a610', 1, 1, 'Киррил Новицки', 'kiril@gmail.com', 'Украина', 380673332211);
 
 --
 -- Индексы сохранённых таблиц
@@ -55,6 +56,8 @@ INSERT INTO `users` (`id`, `login`, `password`, `grant`, `active`, `FIO`, `email
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `email` (`email`),
+  ADD UNIQUE KEY `login` (`login`),
   ADD KEY `indSignIn` (`login`,`password`);
 
 --
@@ -65,7 +68,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
