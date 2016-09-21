@@ -26,7 +26,7 @@ class News
 
         $newsList = array();
 
-        $result = $db->query("SELECT `id`, `title`, `date`, `short_content`, `author_name`, `preview` FROM `news` ORDER BY `date` DESC LIMIT 10");
+        $result = $db->query("SELECT `id`, `title`, `date`, `short_content`, `author_name`, `preview` FROM `news` ORDER BY `id` DESC");
 
         $i = 0;
         while ($row = $result->fetch_assoc()) {

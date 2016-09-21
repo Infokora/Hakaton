@@ -9,11 +9,9 @@ class Addnews
         $db->query("SET NAMES 'utf8'");
 
         if ($_FILES['image']['error'] == 0) {
-
-        }
-        $file_destination = ROOT . 'images/news/' . $_FILES['image']['name'];
-        if (move_uploaded_file($_FILES['image']['tmp_name'], $file_destination)) {
-            $db->query("INSERT INTO `news`
+            $file_destination = ROOT . 'images/news/' . $_FILES['image']['name'];
+            if (move_uploaded_file($_FILES['image']['tmp_name'], $file_destination)) {
+                $result = $db->query("INSERT INTO `news`
                         SET `title` = '{$_POST['title']}',
                             `date` = NOW(),
                             `short_content` = '{$_POST['short_content']}',
@@ -21,9 +19,11 @@ class Addnews
                             `author_name` = '{$_SESSION['current_user']}',
                             `preview` = 'images/news/{$_FILES['image']['name']}',
                             `type` = 'article'");
+            }
+
         }
         $db->close();
-
+        return $result;
     }
 
 
