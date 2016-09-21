@@ -18,8 +18,6 @@
 	</main>
 	<div class="resize">
 
-
-
 		<!-- News -->
 		<section class="create_news">
 			<div class="head">
@@ -28,7 +26,7 @@
 			<div class="form_in">
 				<form method="post" action="record" enctype="multipart/form-data">
 					<label for="nazva_news"><input name="title" id="nazva_news" type="text" placeholder="Введите название новости"></label>
-					<label for="img_news">Выберите картунку для новости<input name="image" id="img_news" type="file"></label>
+					<label for="img_news">Выберите картинку для новости<input name="image" id="img_news" type="file"></label>
 					<label for="korotko_news"><input name="short_content" id="korotko_news" type="text" placeholder="Введите краткое описаниее"></label>
 					<label for="info_news"><input name="content" id="info_news" type="text" placeholder="Текст новости"></label>
 					<input name="redirect" type="hidden" value="addnews">
@@ -37,20 +35,6 @@
 			</div>
 		</section>
 		<!-- Evant -->
-
-		<!-- log in -->
-		<div id="overlay_log"></div>
-		<div class="form_log">
-			<form method="POST" action="login">
-				<label for="login_in"><input name="log_in" id="login_in" type="login"
-											 placeholder="Введите логин"></label>
-				<label for="password_in"><input name="pass_in" id="password_in" type="password"
-												placeholder="Введите пароль"></label>
-				<label><input name="login_sub" id="login_sub" type="submit" value="Войти"></label>
-				<input name="redirect" type="hidden" value="add_news">
-				<a href="home#registration_form" class="reg">Зарегистрироватся</a>
-			</form>
-		</div>
 
 		<!-- popup -->
 		<div id="overlay"></div>

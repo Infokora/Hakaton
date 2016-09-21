@@ -10,6 +10,9 @@ return array(
     'out' => 'login/out',
     'addnews' => 'addnews/index',
     'record' => 'addnews/record',
+    'events' => 'events/index',
+    'addevent' => 'addevent/index',
+    'create_event' => 'addevent/create',
     '' => 'home/index',
 );
 //    '' => 'home/index',
