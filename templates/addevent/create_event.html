@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link type="text/css" rel="stylesheet" href="main/css/reset.css">
-    <link href="main/css/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="main/css/jquery-ui.min.css">
     <link rel="stylesheet" type="text/css" href="main/css/style2.css">
+    <script src="main/js/jquery.min.js"></script>
+    <script src="main/js/jquery-ui.js"></script>
 </head>
 <body>
 <div id="wrap">
@@ -27,14 +28,14 @@
             <div class="form_in">
                 <form method="post" action="create_event" enctype="multipart/form-data">
                     <label for="nazva_event">Название события:<input name="title" id="nazva_event" type="text"
-                                                                     placeholder="Название события"></label>
+                        placeholder="Название события"></label>
                     <label for="data_event_begin">Выберите дату начала события:<input name="date_from" class="data"
-                                                                                      id="data_event_begin" type="text"></label>
+                        id="data_event_begin" type="text"></label>
                     <label for="data_event_end">Выберите дату окончания события:<input name="date_to" class="data"
-                                                                                       id="data_event_end" type="text"></label>
+                        id="data_event_end" type="text"></label>
                     <label for="img_event">Выберите картинку для события:<input name="image" id="img_event" type="file"></label>
                     <label for="korotko_event"><input name="short_content" id="korotko_event" type="text"
-                                                      placeholder="Короткое описание события"></label>
+                        placeholder="Короткое описание события"></label>
                     <label for="info_event" id="info_event">
                         <textarea name="content" placeholder="Подробная информация события"></textarea>
                     </label>
@@ -64,8 +65,6 @@
         </div>
     </div>
 </div>
-<script src="main/js/jquery.min.js"></script>
 <script src="main/js/script2.js"></script>
-<script src="main/js/jquery-ui.js"></script>
 </body>
 </html>
