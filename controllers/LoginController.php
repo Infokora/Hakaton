@@ -69,7 +69,7 @@ class LoginController
             }
         }
 //        unset($_SESSION['user_access']);
-        header('Location: '. PATH. $_POST['redirect']);
+//        header('Location: '. PATH. $_POST['redirect']);
 
         return true;
     }
