@@ -132,20 +132,6 @@ $(function(){
             $cont.animate({marginTop:"50px"},700)
         }
     })
-    /*var kilcPar=$('.spusok li');
-     var polovuna=kilcPar.length/2;
-     console.log(polovuna);
-     function randNum(min, max) {
-     return Math.floor(Math.random() * (kilcPar.length - polovuna + 1)) + polovuna;
-     };
-     var a;
-     var masSpuska = [];
-     for(i=0; i<kilcPar.length; i++) {
-     a=randNum();
-     kilcPar[].append('')
-     };
-     console.log(masSpuska);
-     */
 
 
 

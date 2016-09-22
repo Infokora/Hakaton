@@ -84,7 +84,6 @@ body, p{
 
 }
 .form_log .reg:hover{
-	border-bottom:2px solid #32CD32;
 	transition:border-bottom 0.5s;
 }
 .form_log input{
