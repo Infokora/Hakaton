@@ -126,5 +126,10 @@ $(function(){
             $cont.animate({marginTop:"50px"},700)
         }
     })
+ $( function() {
+    $( "#date_event_begin" ).datepicker();
+    $( "#date_event_end" ).datepicker();
+  } );
+
 
 });
