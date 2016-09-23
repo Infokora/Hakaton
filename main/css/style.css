@@ -193,10 +193,6 @@ h2 { padding: 0 0 5px; font-weight: 600; font-size: 29px;}
 	font-size: 15px;
 	line-height: 25px;
 }
-
-
-
-
 .resize{
 	max-width:1918px;
 	margin:0 auto;
@@ -224,14 +220,12 @@ body, p{
 .nav a{
 	font-size:14px;
 	color:white;
+	display:block;
+	padding:15px;
 }
 .nav li{
 	float:left;
 
-}
-.nav li a{
-	display:block;
-	padding:15px;
 }
 .nav li:last-child{
 	margin-right:50px;
@@ -282,10 +276,7 @@ body, p{
 	padding-top:10px;
 
 }
-.form_log .reg:hover{
-	border-bottom:2px solid #32CD32;
-	transition:border-bottom 0.5s;
-}
+
 .form_log input{
 	width:70%;
 	font-size:14px;
@@ -316,7 +307,6 @@ body, p{
 	font-size:40px;
 }
 #popup .kontakt_tel p:before{
-
 	content:"";
 	width:24px;
 	height:24px;
@@ -402,7 +392,6 @@ body, p{
 	display:block;
 	background-color:rgba(0,0,0,0);
 }
-
 .slider {
 	position: relative;margin-top: 48px;
 }

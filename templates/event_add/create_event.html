@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Создать событие</title>
+    <link type="text/css" rel="stylesheet" href="main/css/reset.css">
+    <link rel="stylesheet" href="main/css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="main/css/style.css">
+    <script src="main/js/jquery.min.js"></script>
+    <script src="main/js/jquery-ui.js"></script>
+</head>
+<body>
+<div id="wrap">
+
+    [navigation]
+
+    <div class="resize">
+
+        <!-- Evant -->
+        <section class="create_news">
+            <div class="head">
+                <h2>Создайте событие</h2>
+            </div>
+            <div class="form_in">
+                <form method="post" action="create_event" enctype="multipart/form-data">
+                    <label for="nazva_event">Название события:<input name="title" id="nazva_event" type="text"
+                                                                     placeholder="Название события"></label>
+                    <label for="data_event_begin">Выберите дату начала события:<input name="date_from" class="data"
+                                                                                      id="data_event_begin" type="text"></label>
+                    <label for="data_event_end">Выберите дату окончания события:<input name="date_to" class="data"
+                                                                                       id="data_event_end" type="text"></label>
+                    <label for="img_event">Выберите картинку для события:<input name="image" id="img_event" type="file"></label>
+                    <label for="korotko_event"><input name="short_content" id="korotko_event" type="text"
+                                                      placeholder="Короткое описание события"></label>
+                    <label for="info_event" id="info_event">
+                        <textarea name="content" placeholder="Подробная информация события"></textarea>
+                    </label>
+                    <label for=""><input name="sub" type="submit" value="Создать"></label>
+                    <input name="redirect" type="hidden" value="addevent">
+                </form>
+            </div>
+        </section>
+
+        <!-- popup -->
+        <div id="overlay"></div>
+        <div id="popup">
+            <div class="header"><h2>Наши контакты</h2></div>
+            <div class="content">
+                <div class="kontakt_tel">
+                    <p>+380-999-911-111</p>
+                    <p>e-mail: hakaton@gmail.com</p>
+                </div>
+                <div class="soc_icon">
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="main/js/script.js"></script>
+</body>
+</html>
