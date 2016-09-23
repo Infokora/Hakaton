@@ -10,7 +10,7 @@ h1 { padding:120px 0 24px; font-size: 61px; position: relative;}
 h2 { padding: 0 0 5px; font-weight: 600; font-size: 29px;}
 
 .blue_line {
-	background: rgb(30, 144, 255);
+	background:rgb(30, 144, 255);
 }
 .clear:after{
 	content:"";
@@ -339,16 +339,15 @@ body, p{
 #popup .soc_icon ul li:nth-child(3) a{
 	background:url(../img/twitter.png);
 }
-.resize .create_news{
+.resize .cont_block{
 	position:relative;
 	top:100px;
-	/*left:25%;*/
 	width:50%;
 	margin:0 auto;
 	border-radius:10px;
-	background: #987cff;
+	background:white;
 }
-.create_news .head{
+.cont_block .head{
 	background:#555;
 }
 .head h2{
@@ -358,8 +357,14 @@ body, p{
 	color:white;
 	box-shadow:0 3px 5px rgba(0,0,0,0.7);
 }
-.create_news{
+.cont_block{
 	border-radius:10px;
+}
+.cont{
+	margin-top:20px;
+}
+.cont, .cont form p, .cont ul li{
+	color:#1E90FF;
 }
 .form_in form{
 	margin-top:20px;
@@ -377,13 +382,10 @@ body, p{
 }
 .form_in label:last-child{
 	text-align:center;
-}
-.form_in label:last-child{
 	background:#32CD32;
 	border:none;
-}
-.form_in label:nth-child(2){
-	border:none;
+	color:white;
+	font-size:25px;
 }
 .form_in input{
 	width:70%;

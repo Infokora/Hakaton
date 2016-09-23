@@ -12,29 +12,27 @@
 
     [navigation]
 
+    
+    <div class="blue_line">
     <div class="resize">
-
         <!-- News -->
-        <section class="create_news">
+
+        <section class="cont_block">
             <div class="head">
                 <h2>Создайте новость</h2>
             </div>
             <div class="form_in">
                 <form method="post" action="record" enctype="multipart/form-data">
-                    <label for="nazva_news"><input name="title" id="nazva_news" type="text"
-                                                   placeholder="Введите название новости"></label>
-                    <label for="img_news">Выберите картинку для новости<input name="image" id="img_news"
-                                                                              type="file"></label>
+                    <label for="nazva_news"><input name="title" id="nazva_news" type="text" placeholder="Введите название новости"></label>
+                    <label for="img_news">Выберите картинку для новости<input name="image" id="img_news" type="file"></label>
                     <label for="korotko_news"><input name="short_content" id="korotko_news" type="text"
-                                                     placeholder="Введите краткое описаниее"></label>
-                    <label for="info_news"><input name="content" id="info_news" type="text" placeholder="Текст новости"></label>
-                    <input name="redirect" type="hidden" value="addnews">
-                    <label for=""><input type="submit" name="submitik" value="Создать"></label>
+                    placeholder="Введите краткое описаниее"></label>  <label for="info_news"><input name="content" id="info_news" type="text" placeholder="Текст новости"></label>
+                    <label for="go"><input id="go" type="submit" name="submitik" value="">Создать</label>
                 </form>
             </div>
         </section>
         <!-- Evant -->
-
+    </div>
         <!-- popup -->
         <div id="overlay"></div>
         <div id="popup">
