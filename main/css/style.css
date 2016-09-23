@@ -10,13 +10,13 @@ h1 { padding:120px 0 24px; font-size: 61px; position: relative;}
 h2 { padding: 0 0 5px; font-weight: 600; font-size: 29px;}
 
 .blue_line {
-	background: rgb(30, 144, 255);
+	background:rgb(30, 144, 255);
 }
 .clear:after{
- content:"";
- display:block;
- clear:both;
- height:20px;
+	content:"";
+	clear:both;
+	display:block;
+	height:20px;
 }
 .mainwrapper {
 	width: 1020px;
@@ -119,7 +119,7 @@ h2 { padding: 0 0 5px; font-weight: 600; font-size: 29px;}
 
 .mainpage_background {
 
-	background: url('../../images/main_img.jpg') center center no-repeat rgb(30, 144, 255);
+	background: url('../../images/main_img.jpg') center center no-repeat fixed;
 	background-size: cover;
 
 }
@@ -194,10 +194,9 @@ h2 { padding: 0 0 5px; font-weight: 600; font-size: 29px;}
 	line-height: 25px;
 }
 .resize{
-	max-width:1400px;
+	max-width:1918px;
 	margin:0 auto;
 	background-color:#1E90FF;
-	height:1000px;
 }
 #wrap{
 
@@ -212,7 +211,7 @@ body, p{
 	top:0;
 	width:100%;
 	background:#000;
-	height:48px;
+	height:51px;
 	box-shadow: 0 0 0 rgba(0,0,0, 0.3);
 }
 .main .nav{
@@ -287,7 +286,7 @@ body, p{
 }
 
 #overlay { display: none; position: fixed; z-index: 990; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); cursor: pointer;}
-#popup { display: none; position: fixed; z-index: 995; left: 40%; top: 35%; margin: -80px 0 0 -150px; width: 500px; background: white; border-radius:10px;}
+#popup { display: none; position: fixed; z-index: 995; left: 45%; top: 40%; margin: -80px 0 0 -150px; width: 500px; background: white; border-radius:10px;}
 #popup .header { padding: 6px 12px; font-weight: bold; background:#1E90FF; box-shadow:0 3px 5px rgba(0,0,0,0.7);}
 #popup .content { padding: 12px; height:220px;}
 #popup .buttons { margin: 0; padding: 6px 12px 16px; text-align: center;}
@@ -340,16 +339,19 @@ body, p{
 #popup .soc_icon ul li:nth-child(3) a{
 	background:url(../img/twitter.png);
 }
+<<<<<<< HEAD
 .create_news, .open_event{
+=======
+.resize .cont_block{
+>>>>>>> master
 	position:relative;
 	top:100px;
-	left:25%;
 	width:50%;
 	margin:0 auto;
 	border-radius:10px;
 	background:white;
 }
-.create_news .head{
+.cont_block .head{
 	background:#555;
 }
 .head{
@@ -362,8 +364,18 @@ body, p{
 	color:white;
 	box-shadow:0 3px 5px rgba(0,0,0,0.7);
 }
+<<<<<<< HEAD
 .create_news, .open_event{
+=======
+.cont_block{
+>>>>>>> master
 	border-radius:10px;
+}
+.cont{
+	margin-top:20px;
+}
+.cont, .cont form p, .cont ul li{
+	color:#1E90FF;
 }
 .form_in form{
 	margin-top:20px;
@@ -381,13 +393,10 @@ body, p{
 }
 .form_in label:last-child{
 	text-align:center;
-}
-.form_in label:last-child{
 	background:#32CD32;
 	border:none;
-}
-.form_in label:nth-child(2){
-	border:none;
+	color:white;
+	font-size:25px;
 }
 .form_in input{
 	width:70%;
@@ -517,4 +526,3 @@ section p{color:white; font-weight: 400; padding:0 15px; overflow: hidden; text-
 	text-align: center;
 	width: 30%;
 }
-

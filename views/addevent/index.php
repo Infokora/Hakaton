@@ -1,6 +1,6 @@
 <?php
 
-$file = ROOT.'templates/addevent/create_event.html';
+$file = ROOT.'templates/event_add/create_event.html';
 $content = file_get_contents($file);
 
 $navigation = new Navigation();

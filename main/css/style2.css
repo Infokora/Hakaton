@@ -1,11 +1,11 @@
  .resize{
 	max-width:1400px;
-	margin:0 auto; 
+	margin:0 auto;
 	background-color:#1E90FF;
-	height:3000px;	
+	height:3000px;
 }
 #wrap{
-	
+
 }
 body, p{
 	font: 13px/1.5 Helvetica, sans-serif;
@@ -93,14 +93,68 @@ body, p{
 	display:block;
 	background-color:rgba(0,0,0,0);
 }
-		#overlay { display: none; position: fixed; z-index: 990; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); cursor: pointer;}
-		#popup { display: none; position: fixed; z-index: 995; left: 45%; top: 50%; margin: -80px 0 0 -150px; width: 500px; background: white; border-radius:10px;}
-		#popup .header { padding: 6px 12px; font-weight: bold; background:#1E90FF; box-shadow:0 3px 5px rgba(0,0,0,0.7);}
-		#popup .content { padding: 12px; height:220px;}
-		#popup .buttons { margin: 0; padding: 6px 12px 16px; text-align: center;}
-		#popup .buttons a { display: inline-block; padding: 2px 20px; border: 1px solid #000;}
-		#overlay_log { display: none; position: fixed; z-index: 990; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); cursor: pointer;}
-#popup .header h2{
+
+ #overlay {
+     display: none;
+     position: fixed;
+     z-index: 990;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.5);
+     cursor: pointer;
+ }
+
+ #popup {
+     display: none;
+     position: fixed;
+     z-index: 995;
+     left: 45%;
+     top: 50%;
+     margin: -80px 0 0 -150px;
+     width: 500px;
+     background: white;
+     border-radius: 10px;
+ }
+
+ #popup .header {
+     padding: 6px 12px;
+     font-weight: bold;
+     background: #1E90FF;
+     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.7);
+ }
+
+ #popup .content {
+     padding: 12px;
+     height: 220px;
+ }
+
+ #popup .buttons {
+     margin: 0;
+     padding: 6px 12px 16px;
+     text-align: center;
+ }
+
+ #popup .buttons a {
+     display: inline-block;
+     padding: 2px 20px;
+     border: 1px solid #000;
+ }
+
+ #overlay_log {
+     display: none;
+     position: fixed;
+     z-index: 990;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.5);
+     cursor: pointer;
+ }
+
+ #popup .header h2{
 	color:white;
 	text-align:center;
 	font-size:35px;
@@ -211,7 +265,7 @@ body, p{
 	padding:20px;
 }
 .spusok li{
-	padding:10px;	
+	padding:10px;
 }
 .form_math ul{
 	width:250px;
@@ -283,3 +337,9 @@ body, p{
 .the_final_6 li:last-child {
     list-style: none;
 }
+ .clear:after{
+     content:"";
+     clear:both;
+     display:block;
+     height:20px;
+ }

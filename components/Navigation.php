@@ -40,7 +40,13 @@ class Navigation
     {
         $navigation = $this->getNavigation();
 
-        $navContent = '<nav class="nav">';
+        $navContent = '<nav class="main">
+                            <label for="">
+                                <img src="" alt="">
+                                    <p>Логотип</p>
+                            </label>
+                            <div class="resize">
+                            <menu class="nav">';
         foreach ($navigation as $nav) {
             if (($nav['grant'] == ADMIN_ACCESS)) {
                 if (isset($_SESSION['user_access']) && $_SESSION['user_access'] == ADMIN_ACCESS) {
@@ -61,7 +67,8 @@ class Navigation
                 $navContent .= $this->getLink($nav, $page, $id);
             }
         }
-        $navContent .= '</nav>';
+        $navContent .= '</menu></div>
+                    </nav>';
         return $navContent;
     }
 }

@@ -2,69 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Создать событие</title>
     <link type="text/css" rel="stylesheet" href="main/css/reset.css">
     <link rel="stylesheet" href="main/css/jquery-ui.min.css">
-    <link rel="stylesheet" type="text/css" href="main/css/style2.css">
+    <link rel="stylesheet" type="text/css" href="main/css/style.css">
     <script src="main/js/jquery.min.js"></script>
     <script src="main/js/jquery-ui.js"></script>
 </head>
 <body>
-<div id="wrap">
-    <main class="main">
-        <label for="">
-            <img src="" alt="">
-            <p>Логотип</p>
-        </label>
+    <div id="wrap">
+
         [navigation]
-    </main>
-    <div class="resize">
 
-        <!-- Evant -->
-        <section class="create_news">
-            <div class="head">
-                <h2>Создайте событие</h2>
-            </div>
-            <div class="form_in">
-                <form method="post" action="create_event" enctype="multipart/form-data">
-                    <label for="nazva_event">Название события:<input name="title" id="nazva_event" type="text"
-                        placeholder="Название события"></label>
-                    <label for="data_event_begin">Выберите дату начала события:<input name="date_from" class="data"
-                        id="data_event_begin" type="text"></label>
-                    <label for="data_event_end">Выберите дату окончания события:<input name="date_to" class="data"
-                        id="data_event_end" type="text"></label>
-                    <label for="img_event">Выберите картинку для события:<input name="image" id="img_event" type="file"></label>
-                    <label for="korotko_event"><input name="short_content" id="korotko_event" type="text"
-                        placeholder="Короткое описание события"></label>
-                    <label for="info_event" id="info_event">
-                        <textarea name="content" placeholder="Подробная информация события"></textarea>
-                    </label>
-                    <label for=""><input name="sub" type="submit" value="Создать"></label>
-                    <input name="redirect" type="hidden" value="addevent">
-                </form>
-            </div>
-        </section>
+        <div class="blue_line">
 
-        <!-- popup -->
-        <div id="overlay"></div>
-        <div id="popup">
-            <div class="header"><h2>Наши контакты</h2></div>
-            <div class="content">
-                <div class="kontakt_tel">
-                    <p>+380-999-911-111</p>
-                    <p>e-mail: hakaton@gmail.com</p>
-                </div>
-                <div class="soc_icon">
-                    <ul>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
+            <!-- Evant -->
+            <div class="resize  clear">
+                <section class="cont_block">
+                    <div class="head">
+                        <h2>Создайте событие</h2>
+                    </div>
+                    <div class="form_in">
+                        <form method="post" action="create_event" enctype="multipart/form-data">
+                            <label for="nazva_org_event"> 1. Название организации:	<input name="nazva_org_event" id="nazva_org_event" type="text" placeholder="Введите информацию"></label>
+                            <label for="status_event"> 2. Статус, вид конкурса, фестиваля:	<input name="status_event" id="status_event" type="text" placeholder="Введите информацию"></label>
+                            <label for="name_event"> 3. Название:	<input name="name_event" id="name_event" type="text" placeholder="Введите информацию"></label>
+                            <label for="date_event_begin">4. Даты проведения:	<input name="date_event_begin" id="date_event_begin" type="text" placeholder="Выберите дату начала"></label>
+                                <label><input name="date_event_end" id="date_event_end" type="text" placeholder="Выберите дату окончания"></label>
+                                <label for="place_event"> 5. Место проведения:	<input name="place_event" id="place_event" type="text" placeholder="Введите информацию"></label>
+                                <label for="country_event"> 6. Страна проведения:	<input name="country_event" id="country_event" type="text" placeholder="Введите информацию"></label>
+                                <label for="judge_event"> 7. Главний судья:	<input name="judge_event" id="judge_event" type="text" placeholder="Введите информацию"></label>
+                                <label for="skrut_event"> 8. Сркутинер:	<input name="skrut_event" id="skrut_event" type="text" placeholder="Введите информацию"></label>
+                                <label for="add_info_event"> 9. Дополнительная информация:	<textarea name="add_info_event" id="add_info_event" placeholder="Введите информацию"></textarea></label>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+
+                                <input name="redirect" type="hidden" value="addevent">
+                                <p>&nbsp;</p>
+                                <label for="go"><input id="go" type="submit" name="submitik" value="">Отправить форму</label>
+                            </form>
+                        </div>
+                    </section>
+
+                    <!-- popup -->
+                    <div id="overlay"></div>
+                    <div id="popup">
+                        <div class="header"><h2>Наши контакты</h2></div>
+                        <div class="content">
+                            <div class="kontakt_tel">
+                                <p>+380-999-911-111</p>
+                                <p>e-mail: hakaton@gmail.com</p>
+                            </div>
+                            <div class="soc_icon">
+                                <ul>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-<script src="main/js/script2.js"></script>
+
+    <script src="main/js/script.js"></script>
 </body>
 </html>

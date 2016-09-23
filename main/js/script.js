@@ -30,12 +30,6 @@ $(function(){
     $next.on('click',goSlide);
     $prev.on('click',backSlide);
 
-
-    $('section, span, #popup-news .buttons, #overlay').on('click', function () {
-        $('#popup-news, #overlay').toggle();
-    });
-
-
     //function2
     $('.nav li').hover(function(){
         $(this).css('background', '#1E90FF')
@@ -132,7 +126,5 @@ $(function(){
             $cont.animate({marginTop:"50px"},700)
         }
     })
-
-
 
 });
