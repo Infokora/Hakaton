@@ -17,29 +17,31 @@
     <div class="resize">
 
         <!-- Evant -->
-        <section class="create_news">
-            <div class="head">
-                <h2>Создайте событие</h2>
-            </div>
-            <div class="form_in">
-                <form method="post" action="create_event" enctype="multipart/form-data">
-                    <label for="nazva_event">Название события:<input name="title" id="nazva_event" type="text"
-                                                                     placeholder="Название события"></label>
-                    <label for="data_event_begin">Выберите дату начала события:<input name="date_from" class="data"
-                                                                                      id="data_event_begin" type="text"></label>
-                    <label for="data_event_end">Выберите дату окончания события:<input name="date_to" class="data"
-                                                                                       id="data_event_end" type="text"></label>
-                    <label for="img_event">Выберите картинку для события:<input name="image" id="img_event" type="file"></label>
-                    <label for="korotko_event"><input name="short_content" id="korotko_event" type="text"
-                                                      placeholder="Короткое описание события"></label>
-                    <label for="info_event" id="info_event">
-                        <textarea name="content" placeholder="Подробная информация события"></textarea>
-                    </label>
-                    <label for=""><input name="sub" type="submit" value="Создать"></label>
-                    <input name="redirect" type="hidden" value="addevent">
-                </form>
-            </div>
-        </section>
+        <div class="resize">
+            <section class="create_news">
+                <div class="head">
+                    <h2>Создайте событие</h2>
+                </div>
+                <div class="form_event">
+                    <form method="post" action="create_event" enctype="multipart/form-data">
+                        <p><label for="nazva_org_event"> 1. Название организации:	<input name="nazva_org_event" id="nazva_org_event" type="text" placeholder="Введите информацию"></label></p>
+                        <p><label for="status_event"> 2. Статус, вид конкурса, фестиваля:	<input name="status_event" id="status_event" type="text" placeholder="Введите информацию"></label></p>
+                        <p><label for="name_event"> 3. Название:	<input name="name_event" id="name_event" type="text" placeholder="Введите информацию"></label></p>
+                        <p><label for="date_event_begin">4. Даты проведения:	<input name="date_event_begin" id="date_event_begin" type="text" placeholder="Выберите дату начала">
+                            <input name="date_event_end" id="date_event_end" type="text" placeholder="Выберите дату окончания"></label></p>
+                        <p><label for="place_event"> 5. Место проведения:	<input name="place_event" id="place_event" type="text" placeholder="Введите информацию"></label></p>
+                        <p><label for="count_event"> 6. Страна проведения:	<input name="count_event" id="count_event" type="text" placeholder="Введите информацию"></label></p>
+                        <p><label for="judge_event"> 7. Главний судья:	<input name="judge_event" id="judge_event" type="text" placeholder="Введите информацию"></label></p>
+                        <p><label for="skrut_event"> 8. Сркутинер:	<input name="skrut_event" id="skrut_event" type="text" placeholder="Введите информацию"></label></p>
+                        <p><label for="add_info_event"> 9. Дополнительная информация:	<textarea name="add_info_event" id="add_info_event" placeholder="Введите информацию"></textarea></label></p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <button type="submit">Отправить форму</button>
+                        <input name="redirect" type="hidden" value="addevent">
+                        <p>&nbsp;</p>
+                    </form>
+                </div>
+            </section>
 
         <!-- popup -->
         <div id="overlay"></div>

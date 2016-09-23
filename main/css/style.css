@@ -342,11 +342,11 @@ body, p{
 .resize .create_news{
 	position:relative;
 	top:100px;
-	left:25%;
+	/*left:25%;*/
 	width:50%;
 	margin:0 auto;
 	border-radius:10px;
-	background:white;
+	background: #987cff;
 }
 .create_news .head{
 	background:#555;
@@ -513,4 +513,3 @@ section p{color:white; font-weight: 400; padding:0 15px; overflow: hidden; text-
 	text-align: center;
 	width: 30%;
 }
-
