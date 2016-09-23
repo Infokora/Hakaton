@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Сен 21 2016 г., 14:35
+-- Время создания: Сен 23 2016 г., 09:07
 -- Версия сервера: 10.1.9-MariaDB
 -- Версия PHP: 5.6.15
 
@@ -43,7 +43,8 @@ CREATE TABLE `events` (
 --
 
 INSERT INTO `events` (`id`, `title`, `date_from`, `date_to`, `author_name`, `short_content`, `content`, `preview`, `type`) VALUES
-(1, 'Первое событие!', '2016-09-21', '2016-09-25', 'Roma Slobodeniuk', 'Соревнования по танцам', 'Первое соревнование в Хмельницком', 'images/events/Street-in-China-wallpaper-1366x768.jpg', 'event');
+(1, 'Первое событие!', '2016-09-21', '2016-09-25', 'Roma Slobodeniuk', 'Соревнования по танцам', 'Первое соревнование в Хмельницком', 'images/events/Street-in-China-wallpaper-1366x768.jpg', 'event'),
+(2, 'Подія 2', '2016-09-22', '2016-09-23', 'Roma Slobodeniuk', 'Короткий опис', 'повний опис', 'images/events/21-koshachya-mordochka-makro-oboi-1366x768.jpg', 'event');
 
 --
 -- Индексы сохранённых таблиц
@@ -64,7 +65,7 @@ ALTER TABLE `events`
 -- AUTO_INCREMENT для таблицы `events`
 --
 ALTER TABLE `events`
-  MODIFY `id` tinyint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` tinyint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
