@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html { margin:0; padding:0;}
 body { margin:0; padding:0; color:black; font:normal 22px/48px 'Open Sans', sans-serif; background:#fff;}
 .clr:after { content:""; display:block; height:0; font-size:0; line-height:0; clear:both;}
@@ -197,6 +198,13 @@ h2 { padding: 0 0 5px; font-weight: 600; font-size: 29px;}
 	max-width:1918px;
 	margin:0 auto;
 	background-color:#1E90FF;
+=======
+ .resize{
+	max-width:1400px;
+	margin:0 auto; 
+	background-color:#1E90FF;
+	height:3000px;	
+>>>>>>> 2524ff5e6ce9df9a055759381bcb396778a32600
 }
 #wrap{
 
@@ -225,7 +233,6 @@ body, p{
 }
 .nav li{
 	float:left;
-
 }
 .nav li:last-child{
 	margin-right:50px;
@@ -284,6 +291,7 @@ body, p{
 	display:block;
 	background-color:rgba(0,0,0,0);
 }
+<<<<<<< HEAD
 
 #overlay { display: none; position: fixed; z-index: 990; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); cursor: pointer;}
 #popup { display: none; position: fixed; z-index: 995; left: 45%; top: 40%; margin: -80px 0 0 -150px; width: 500px; background: white; border-radius:10px;}
@@ -292,6 +300,15 @@ body, p{
 #popup .buttons { margin: 0; padding: 6px 12px 16px; text-align: center;}
 #popup .buttons a { display: inline-block; padding: 2px 20px; border: 1px solid #000;}
 #overlay_log { display: none; position: fixed; z-index: 990; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); cursor: pointer;}
+=======
+		#overlay { display: none; position: fixed; z-index: 990; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); cursor: pointer;}
+		#popup { display: none; position: fixed; z-index: 995; left: 45%; top: 30%; margin: -70px 0 0 -180px; width: 500px; background: white; border-radius:10px;}
+		#popup .header { padding: 6px 12px; font-weight: bold; background:#1E90FF; box-shadow:0 3px 5px rgba(0,0,0,0.7);}
+		#popup .content { padding: 12px; height:220px;}
+		#popup .buttons { margin: 0; padding: 6px 12px 16px; text-align: center;}
+		#popup .buttons a { display: inline-block; padding: 2px 20px; border: 1px solid #000;}
+		#overlay_log { display: none; position: fixed; z-index: 990; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); cursor: pointer;}
+>>>>>>> 2524ff5e6ce9df9a055759381bcb396778a32600
 #popup .header h2{
 	color:white;
 	text-align:center;
@@ -339,11 +356,8 @@ body, p{
 #popup .soc_icon ul li:nth-child(3) a{
 	background:url(../img/twitter.png);
 }
-<<<<<<< HEAD
-.create_news, .open_event{
-=======
+
 .resize .cont_block{
->>>>>>> master
 	position:relative;
 	top:100px;
 	width:50%;
@@ -354,9 +368,6 @@ body, p{
 .cont_block .head{
 	background:#555;
 }
-.head{
-	background:#555;
-}
 .head h2{
 	font-size:35px;
 	padding:20px;
@@ -364,11 +375,7 @@ body, p{
 	color:white;
 	box-shadow:0 3px 5px rgba(0,0,0,0.7);
 }
-<<<<<<< HEAD
-.create_news, .open_event{
-=======
 .cont_block{
->>>>>>> master
 	border-radius:10px;
 }
 .cont{
@@ -392,14 +399,21 @@ body, p{
 	border:1px solid #1E90FF;
 }
 .form_in label:last-child{
+<<<<<<< HEAD
 	text-align:center;
 	background:#32CD32;
 	border:none;
 	color:white;
 	font-size:25px;
 }
+.form_in label:last-child{
+	text-align:center;
+	background:#32CD32;
+	border:none;
+}
 .form_in input{
 	width:70%;
+	padding:10px 0;
 	font-size:14px;
 	border:0;
 	display:block;
@@ -454,7 +468,6 @@ body, p{
 .next:hover {
 	cursor: pointer
 }
-
 .prev {
 	position: absolute;
 	left: 5%;
@@ -525,4 +538,82 @@ section p{color:white; font-weight: 400; padding:0 15px; overflow: hidden; text-
 .image_news {
 	text-align: center;
 	width: 30%;
+}
+#jereb_run{
+	font-size:30px;
+	text-align:center;
+}
+.spusok{
+	margin-left:25px;
+	padding:20px;
+}
+.spusok li{
+	padding:10px;	
+}
+.form_math ul{
+	width:250px;
+}
+.cenu ul{
+	float:right;
+	margin-top:-590px;
+}
+.form_math form{
+	margin-top:20px;
+}
+.form_math label, .cenu li{
+	display:block;
+	width:80%;
+	margin-bottom:10px;
+	display:block;
+	color:#1E90FF;
+	cursor:pointer;
+	background:white;
+	border:1px solid #1E90FF;
+}
+.cenu input{
+	width:85%;
+	padding:12px;
+	border:0;
+	background-color:rgba(0,0,0,0);
+}
+.form_math .last_button{
+	text-align:center;
+	margin:0 auto;
+	width:70%;
+	background:#32CD32;
+}
+.form_math .last_button a{
+	display:block;
+	text-align:center;
+	width:100%;
+}
+.cenu ul{
+	padding-top:20px;
+	float:right;
+	display:none;
+}
+.the_final_6 {
+    display: none;
+    z-index: 100;
+    width: 500px;
+    min-height: 600px;
+    background: white;
+    border: solid 5px rgb(30, 144, 255);
+    color: rgb(30, 144, 255);
+    position: fixed;
+    top: 50px;
+    margin-left: 50%;
+    left: -300px;
+}
+.the_final_6 ul{
+	margin:0 auto;
+}
+.the_final_6 li:last-child {
+    list-style: none;
+}
+.fl:after{
+	content:"";
+	display:block;
+	clear:both;
+	height:20px;
 }
