@@ -340,7 +340,7 @@ body, p{
 #popup .soc_icon ul li:nth-child(3) a{
 	background:url(../img/twitter.png);
 }
-.resize .create_news{
+.create_news, .open_event{
 	position:relative;
 	top:100px;
 	left:25%;
@@ -352,6 +352,9 @@ body, p{
 .create_news .head{
 	background:#555;
 }
+.head{
+	background:#555;
+}
 .head h2{
 	font-size:35px;
 	padding:20px;
@@ -359,7 +362,7 @@ body, p{
 	color:white;
 	box-shadow:0 3px 5px rgba(0,0,0,0.7);
 }
-.create_news{
+.create_news, .open_event{
 	border-radius:10px;
 }
 .form_in form{
