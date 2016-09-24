@@ -1,6 +1,4 @@
 $(function(){
-<<<<<<< HEAD
-
     var $slider=$('.slider').children('div');
     var $next=$(".next");
     var $prev=$('.prev');
