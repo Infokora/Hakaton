@@ -230,8 +230,18 @@ $(function(){
 	});
 
 
-
-
+	// add participats
+	var colvoFrom=$('.pat').length;
+	for(var i=0;i<=colvoFrom;i++){
+		$('.pat'+i).hide();
+	}
+	var a=1;
+	$('#add_pat').on('click',function(){
+		$('.pat'+a).slideDown(400);
+		a++;
+		var dist= $(this).offset().top;
+		$('body,html').animate({scrollTop: dist}, 300);
+	});
    
 
 

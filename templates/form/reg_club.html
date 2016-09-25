@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация клуба</title>
+    <link type="text/css" rel="stylesheet" href="../../main/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../main/css/style.css">
+    <script src="../../main/js/jquery.min.js"></script>
+</head>
+<body>
+<div id="wrap">
+
+    [navigation]
+
+    
+    <div class="blue_line">
+    <div class="resize">
+        <section class="cont_block">
+            <div class="head">
+                <h2>Регистрация клуба</h2>
+            </div>
+            <div class="form_in">
+                <form method="post" action="record" enctype="multipart/form-data">
+                    <label for="nazva_news"><input name="title" id="nazva_news" type="text" placeholder="Введите название клуба"></label>
+                    <label for="img_news">Выберите картинку для логотипа<input name="image" id="img_news" type="file"></label>
+                    <label for="korotko_news"><input name="short_content" id="korotko_news" type="text"
+                    placeholder="Введите ФИО президента"></label>  
+                    <label for="info_news">Контактная информация<input name="content" id="info_news" type="tel" placeholder="номер телефона"></label>
+                     <label for="info_news"><input name="content" id="info_news" type="e-mail" placeholder="e-mail"></label>
+                    <label for="go"><input id="go" type="submit" name="submitik" value="Создать"></label>
+                </form>
+            </div>
+        </section>
+        <!-- Evant -->
+    </div>
+        <!-- popup -->
+        <div id="overlay"></div>
+        <div id="popup">
+            <div class="header"><h2>Наши контакты</h2></div>
+            <div class="content">
+                <div class="kontakt_tel">
+                    <p>+380-999-911-111</p>
+                    <p>e-mail: hakaton@gmail.com</p>
+                </div>
+                <div class="soc_icon">
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../main/js/script.js"></script>
+</body>
+</html>
+

@@ -197,6 +197,7 @@ h2 { padding: 0 0 5px; font-weight: 600; font-size: 29px;}
 }
  .resize{
 	max-width:1400px;
+	min-width:400px;
 	margin:0 auto; 
 	background-color:#1E90FF;
 }
@@ -387,6 +388,21 @@ body, p{
 	border:none;
 	color:white;
 	font-size:25px;
+}
+.form_in label:last-child:hover{
+	cursor:pointer;
+}
+.form_in select{
+	padding:10px;
+	font-size:15px;
+	color:#1E90FF;
+	border:none;
+}
+.form_in .pat input{
+	border-bottom:1px solid #aaa;
+}
+#info_sec{
+	display:none;
 }
 .form_in input{
 	width:99%;
